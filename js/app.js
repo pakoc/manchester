@@ -471,27 +471,28 @@ app.directive('donuteChart',function()
 			donutWidth : 20,
 			height : attrs.height || 200,
 			width  : attrs.width || 200,
-
 		}
+
 		 
 		var chart = new Chartist.Pie('#'+element[0].id, {
 		  series : attrs.series.split(','),
 		  labels : attrs.labels.split(',')
 		},
 		options);
+		
+		chart.on('draw', function(data) {
+		  if(data.type === 'slice') {
+		  	
+		  	if (attrs.stroke) element[0].querySelector('path').style.stroke= attrs.stroke;
+		    
+		    if (attrs.animate) 
+	    	{
+	    		var pathLength = data.element._node.getTotalLength();
 
-		if (attrs.animate) 
-			chart.on('draw', function(data) {
-			  if(data.type === 'slice') {
-			    // Get the total path length in order to use for dash array animation
-			    var pathLength = data.element._node.getTotalLength();
-
-			    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
 			    data.element.attr({
 			      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
 			    });
 
-			    // Create animation definition while also assigning an ID to the animation for later sync usage
 			    var animationDefinition = {
 			      'stroke-dashoffset': {
 			        id: 'anim' + data.index,
@@ -499,26 +500,24 @@ app.directive('donuteChart',function()
 			        from: -pathLength + 'px',
 			        to:  '0px',
 			        easing: Chartist.Svg.Easing.easeOutQuint,
-			        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
 			        fill: 'freeze'
 			      }
 			    };
 
-			    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+			   
 			    if(data.index !== 0) {
 			      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
 			    }
 
-			    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+			    
 			    data.element.attr({
 			      'stroke-dashoffset': -pathLength + 'px'
 			    });
 
-			    // We can't use guided mode as the animations need to rely on setting begin manually
-			    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
 			    data.element.animate(animationDefinition, false);
 			  }
-		});
+			}
+	});
 		
 	};
 	function getId()
@@ -527,7 +526,7 @@ app.directive('donuteChart',function()
 	}
 
 	return {
-		template : '<div><div bar-chart></div></div>',
+		template : '<div class="donute-chart"></div>',
 		replace : true,
 		scope : {},
 		link : link

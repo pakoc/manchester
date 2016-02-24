@@ -1,0 +1,91 @@
+<div class="wrapper">
+	 
+	 <style>	 
+		 
+	 </style>
+		<div class="col-xs-8">
+			<div class="col-xs-4 block" >
+				<div class="carousel_horizontal" style="height:218 px;">
+					<div class="carousel-items" style="width : {{data.items.length * 100}}%;  margin-left : {{currentItem * -100}}%">
+						<div class="carousel-item" style="width : {{100 / data.items.length}}%;" ng-repeat="item in data.items"> <img width="217" src="{{getlogo(item)}}"></div>
+					</div>
+				</div>
+				<div>
+					<h1 class="band">FOCUS:</h1>
+					<div class="carousel_horizontal" style="background: #5a88c4;">
+						<div class="carousel-items" style="width : {{data.items.length * 100}}%;  margin-left : {{currentItem * -100}}%">
+							<div class="carousel-item" ng-repeat="item in data.items" style="width : {{100 / data.items.length}}%;">
+								<ul class="strips">
+									<li ng-repeat="focus in item.focus">{{focus}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>	 
+				</div>
+			</div>
+			<div class="col-xs-8 block">
+				<div class="carousel_vertical video_carousel">
+					<div class="carousel-items"  style="margin-top : {{currentItem * -80}}%">
+						<div class="carousel-item" ng-repeat="item in data.items" ng-bind-html="trustAsHtml(getmediacontent(item))"> </div>
+					</div><!--end carousel-items-->
+				</div><!--end carousel_vertical-->
+			</div>
+
+
+
+
+			<div class="col-xs-12 block">
+				<div class="carousel_vertical video_carousel" style="height: 250px ; ">
+					<div class="carousel-items"  style="margin-top : {{currentItem * -250}}px ; height: {{250*data.items.length}}px ; ">
+						<div class="carousel-item" ng-repeat="item in data.items" style = " height: 250px ; ">
+
+				<h1 class="band">COMPANY INFO:</h1>
+				{{getinfo(item)}}
+			<div class="col-xs-12">
+				<div class="col-xs-9">
+					<h1 class="band">COMPANY SIZE:</h1>
+					<H3>{{item.size}}</H3> employees
+				</div>
+				<div class="col-xs-3">
+					<h1 class="band">COMPANY AGE:</h1>
+					<H3>{{item.age}}</H3> years
+				</div>
+			</div>
+
+						</div>
+					</div><!--end carousel-items-->
+				</div><!--end carousel_vertical-->
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+		<div class="col-xs-4 block">
+			<div>
+				<h1 class="band">CASE STUDIES:</h1>
+			</div>
+			<div>
+				<ul class="items_feed_right">
+					<li ng-repeat="item in data.items" ng-class="{'current bounceIn animated': isSelected(item)}" ng-click="setSelection(item)" style="min-height: 30px; ">{{item.title}}</li>
+				</ul>
+			</div>
+			<div class="director_profile">
+				<div class="col-xs-6">
+					<H3>{{selected.person.name}}</H3>
+					<p>{{selected.person.position}}</p>
+					<p ng-repeat="focus in selected.person.specializations">{{focus}}</li>
+				</div>
+				<div class="col-xs-6">
+					<img src = "{{selected.person.photo}}">
+				</div>
+				<div class="col-xs-12">
+					<h1 class="band">{{selected.person.previous}}</h1>
+				</div>
+			</div>
+		</div>	 
+</div><!--end wrapper-->

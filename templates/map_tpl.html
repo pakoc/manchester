@@ -1,0 +1,50 @@
+
+<div class="wrapper">
+		<div my-map map-width="980"  map-height="680"></div>
+		<div class="col-xs-12 markers-container">
+			<div class="marker animated bounceIn animation-delay-{{ 5 | randomize}}" style="left : {{item.screenX}}px ; top : {{item.screenY}}px ; background: url({{item.logo}}); background-size : cover;" ng-repeat="item in data.items" ng-click="mapSlider.gotoNewPosition(item, 'company');"> </div>
+		</div>
+		<div id="map-slider" class="animated zoomIn">
+			<div style="position: absolute; width : {{350*8}}px; left: {{mapSlider.left}}px; top : {{mapSlider.top}}px;">
+				<div class="col">
+					<div class="item" style="background : #ACADAF">
+						<h2 class="band band-blue">KEY COMPANIES</h2>
+							
+							<!--bar chart-->
+							<div class="bar-charts-block"> 
+								<div bar-chart ng-repeat="sector in alldata.sectors" data-part="{{sector.number}}" data-label="{{sector.number}}" data-all="{{sector.total}}" data-barcolor="{{sector.bar_color}}" data-title="{{sector.title}}"></div>
+							</div>	
+							 	
+							<!--end bar chart-->	
+						<h2 class="band band-lblue">PLACES OF THE INTEREST:</h2>
+						<ul class="items-menu">
+							<li class="animated bounceIn animation-delay-{{$index}}" ng-repeat="item in alldata.places" ng-click="mapSlider.gotoNewPosition(item, 'place');">{{item.title}}</li>
+						</ul>
+					</div>
+					<div class="item" data-company="{{company.title}}" ng-repeat="company in data.items">
+							<h2 class="band band-blue">{{company.title}}</h2>
+							<div ng-bind-html="company.media_content"></div>
+							<div class="description" ng-bind-html="company.info"></div>
+							<button ng-click="gotoStartPosition();">Back</button>
+						</div>
+					</div>
+				<div class="col" ng-repeat="place in alldata.places" data-place="{{place.title}}">
+						<div class="item">
+							<h2 class="band band-blue">{{place.title}}</h2>
+							<img src="{{place.img}}">
+							<div class="description">
+								{{place.info}}
+							</div>
+							<button ng-click="gotoStartPosition();">Back</button>
+						</div>
+						<div class="item" data-company="{{company.title}}" ng-repeat="company in getCompaniesByPlace(place);">
+							<h2 class="band band-blue">{{company.title}}</h2>
+							<div ng-bind-html="company.media_content"></div>
+							<div class="description" ng-bind-html="company.info"></div>
+							<button ng-click="mapSlider.gotoNewPosition(place, 'place');">BAck</button>
+						</div>
+				</div>
+			</div>	
+		</div>
+	 
+</div> <!--end wrapper-->

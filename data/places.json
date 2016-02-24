@@ -1,0 +1,121 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"items": [{
+			"title": "PLACES:",
+			"media_content" : "Creative, digital and tech companies have a tendency to locate in clusters where collaboration can lead to innovation. Manchester has an impressive array of digital and creative spaces to offer, from university backed incubators and science parks to commercial accelerators, from thriving digital and creative hubs to production spaces for feature films, commercials, long form drama and audio.",
+			"link_title": "<BACK",
+			"media_content2" : "",
+			"map_img": "data/pictures/places/Main_map.jpg",
+			"column1_img": "<img src=data/pictures/places/MidImagePlaces_1.png>",
+			"column1_title": "",
+			"column1_info": "",
+			"column2_img": "<img src=data/pictures/places/Place_C&D_Low_right.png>"
+		},
+		{
+			"title": "THE LANDING:",
+			"media_content" : "<img src=data/pictures/places/The_Landing_2.png><br>The Landing gives digital SMEs and micro-businesses a place to work alongside large media and technology organisations, allowing them to be part of and benefit from the exciting and rapidly growing community at MediaCityUK. Spanning seven floors, it combines all cross-sections of the digital creative industry to create a unique environment where SMEs can thrive.",
+			"link_title": "The Landing",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/LN_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Hot desking<br>Monthly price: ?75 + VAT<br>Includes: All costs except IT &Telecoms, MCUK address and membership to “Onthe7th”<br>Offices for SMEs<br>Monthly rent: from ?25 psf<br>Includes: Business rates, service charge, utilities and membership to “Onthe7th”",
+			"column2_img": "<img src=data/pictures/places/The_Landing_1.png>"
+		},
+		{
+			"title": "THE SHARP PROJECT:",
+			"media_content" : "<img src=data/pictures/places/Sharp_Project_1.png> The Sharp Project is home to over 60 digital entrepreneurs, businesses and production companies who specialise in creating and distributing cutting-edge digital content, new media, film and television in a highly sought-after collaborative ecosystem. It houses 200,000 sq ft of high-quality & cost-effective offices, workspaces, production stages & studios.",
+			"link_title": "The Sharp Project",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/SHPR_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Office options (per month):<br>Converted shipping containers:<br>From ?55. Serviced offices: from ?16 psf/mth. Included: Business rates and service charge. Campus membership (per annum): Basic (1 day/wk): ?80 + VAT Full (unrestricted): ?520 + VAT<br>Company (up to 4 ppl): ?1900 + VAT<br>Corporate (up to 10 ppl): ?2000 +VAT",
+			"column2_img": "<img src=data/pictures/places/Sharp_Project_2.png>"
+		},
+		{
+			"title": "THE SPACE PROJECT:",
+			"media_content" : "<img src=data/pictures/places/Space_Project_1.png> The Space Project is a purpose built production stage complex. The 360,000 sq ft site is 5 minutes east from the heart of the city. It offers over 55,000 sq. ft. of high-spec studio space plus purposefully designed dressing and make up facilities, laundry, prop storage / workshops and extensive parking.",
+			"link_title": "The Space Project",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/SPR_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Stages for hire:<br>• Four 11,500 sq ft stages<br>• One 9,000 sq ft stage<br>Features:<br>• Air-conditioning & lighting with i-beam<br>• Acoustic treatment & sound separation<br>• Enhanced reverberation and acoustics",
+			"column2_img": "<img src=data/pictures/places/Space_Project_2.png>"
+		},
+		{
+			"title": "MANCHESTER SCIENCE PARTNERSHIPS:",
+			"media_content" : "<img src=data/pictures/places/MSP_1.png> MSP is internationally recognised as a groundbreaking centre of excellence. Its reputation as one of the most successful and fastest growing locations of its kind is underpinned by its proven ability to provide the environment, facilities and support to maximise innovation and commercial success.",
+			"link_title": "Manchester Science Partnerships (MSP)",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/MSP_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Hot desking:<br>Monthly price: ?250 + VAT (?150 + VAT first year for foreign companies)<br>Includes: All costs as well as WiFi and VoIP handset (local & national), reception service<br>Office options (123sq ft to 8,725 sq ft): Monthly rent: From ?10.50 to ?18 psf. Included: Business rates and service charge, reception service",
+			"column2_img": "<img src=data/pictures/places/video6.jpg>"
+		},
+		{
+			"title": "MEDIACITYUK:",
+			"media_content" : "<img src=data/pictures/places/Media_City.png> MediaCityUK is the magnet that attracts the bigger players in the supply chain (BBC, ITV, BUPA), who in turn can commission work from the eclectic and exciting mix of more than 200 businesses which call MediaCityUK their home. MediaCityUK has an excellent mix of academic players and training enterprises.",
+			"link_title": "MediaCityUK",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/MCU_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Office tower options:<br>Orange Tower: ?24 psf<br>Blue Tower: ?22 psf<br>White Tower: ?19 psf<br>The Greenhouse:<br>Hot desking: from?250 + VAT<br>Offices: from ?433.33 + VAT (2 desks)<br>Offices available from 2 – 6 desks",
+			"column2_img": "<img src=data/pictures/places/LowRight_MediaCity_C&D.png>"
+		},
+		{
+			"title": "SPACEPORT:",
+			"media_content" : "<img src=data/pictures/places/Spaceport_1.png> Spaceport is a unique environment where technology startups can start up faster. Spaceport creates spaces around the world for tech entrepreneurs to meet, work, learn and collaborate. Spaceport provide physical and virtual spaces that enable technology startups to work smarter, develop faster and increase their chance of success.",
+			"link_title": "Spaceport",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/SPO_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Co-working Space:<br>Monthly price:<br>Resident membership: ?225 + VAT<br>Flex membership: ?350 + VAT",
+			"column2_img": "<img src=data/pictures/places/LowRight_Spaceport_C&D.png>"
+		},
+		{
+			"title": "NORTHERN QUATER:",
+			"media_content" : "<img src=data/pictures/places/Topleft_Northern.png> Self-starting and self-supporting, the Northern Quarter is a real life story of how hubs grow organically. A vibrant and eclectic mix of 150 digital and creative companies have made their homes in the converted Victorian cotton and textile warehouses, where they work and play alongside dozens of cafes, galleries, fashion designers and market traders.",
+			"link_title": "Northern Quarter",
+			"media_content2" : "<img src=data/pictures/places/NorthernQ_Lowleft.png>",
+			"map_img": "data/pictures/places/NQ_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Office options:<br>Monthly rent range: From ?5 to ?18 psf<br>MIDAS can conduct a specific property search to fit your individual requirements",
+			"column2_img": "<img src=data/pictures/places/video6.jpg>"
+		},
+		{
+			"title": "UP ACCELERATOR:",
+			"media_content" : "<img src=data/pictures/places/Topleft_UpAccel.png> Based in The Greenhouse at MediaCityUK, Up is a techmedia accelerator created for entrepreneurs by entrepreneurs, with powerful partners hungry for product and ready to back great ideas with real investment. Up’s unique programme provides members the knowledge and skills to succeed as entrepreneurs.",
+			"link_title": "Up Accelerator",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/UA_map.jpg",
+			"column1_img": "",
+			"column1_title": "KEY FACTS",
+			"column1_info": "Members will enjoy:<br> • A brilliant collaborative environment<br>• Mentoring from experienced entrepreneurs<br> • A unique grounding in how to build a business<br> • An accelerator that the entrepreneur at the heart of the value chain<br>• Investors and partners looking to back great ideas with significant investment<br>• And of course, seed funding",
+			"column2_img": "<img src=data/pictures/places/Up_Accel_lower_Right.png>"
+		},
+		{
+			"title": "ESCALATOR:",
+			"media_content" : "<img src=data/pictures/places/Escaltor_Top_left.png> The Manchester Escalator is a new, collaborative space run by Barclays and Central Working, to create a vibrant community of start-ups, corporates, innovators and investors. It includes meeting rooms and a state of the art event space that can be used by anyone who is running an event for or about entrepreneurs.",
+			"link_title": "Escalator",
+			"media_content2" : "<img src=data/pictures/places/video2.jpg>",
+			"map_img": "data/pictures/places/ES_map.jpg",
+			"column1_img": "",
+			"column1_title": "",
+			"column1_info": "",
+			"column2_img": "<img src=data/pictures/places/Escaltor_Low_Right.png>"
+		}
+
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"blocks": [{
+		"title": "Funding",
+		"items": [{
+			"title": "Greater Manchester investment Fund",
+			"img": "data/pictures/funding/greater_manchester_fund.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		}, {
+			"title": "North West Fund",
+			"img": "data/pictures/funding/north-west-fund.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Greater Manchester Loan Fund",
+			"img": "data/pictures/funding/greater-manchester.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Manchester Bussines Loans",
+			"img": "data/pictures/funding/business-loans.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		},
+		{
+			"title": "North West Business Angels",
+			"img": "data/pictures/funding/digital_business.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		},
+		{
+			"title": "Creative England Interest Free Loans",
+			"img": "data/pictures/funding/digital_business.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		},
+		{
+			"title": "Skills Investment Fund",
+			"img": "data/pictures/funding/digital_business.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		},
+		{
+			"title": "Enterprise Zones",
+			"img": "data/pictures/funding/digital_business.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		}] 
+		 
+	}, {
+		"title": "Tax Relief",
+		"items": [{
+			"title": "R&D Tax Credit",
+			"img": "data/pictures/funding/tax-credit.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		}, {
+			"title": "Patent Box",
+			"img": "data/pictures/funding/patent-box.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Film Tax Relief",
+			"img": "data/pictures/funding/film-tax-relief.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "High-end Television Tax Relief",
+			"img": "data/pictures/funding/television.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Animation Tax Relief",
+			"img": "data/pictures/funding/manchester_festival.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Video Game Tax Relief",
+			"img": "data/pictures/funding/manchester_festival.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Knowledge Transfer Partnerships (KTP)",
+			"img": "data/pictures/funding/manchester_festival.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+		}] 
+		 
+
+	}]
+}

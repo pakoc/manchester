@@ -1,0 +1,48 @@
+{
+	"blocks": [{
+		"title": "Headlines",
+		"items": [{
+			"title": "Manchester Tops the Bill as Best European City to do Business",
+			"img": "data/pictures/news/city_to_do_business.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		}, {
+			"title": "Auto Trader's new Manchester office is an inspirational playground",
+			"img": "data/pictures/news/auto_traders.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Manchester to get 78m new arts space on old Granada Studios site",
+			"img": "data/pictures/news/new_arts_space.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Digital business accelerator UP to invest 25k in Manchester entrepreneurs",
+			"img": "data/pictures/news/digital_business.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <ul><li>1</li><li>2</li></ul>"
+		}],
+		"foot_img" : "data/pictures/news/news_foot_1.png"
+	}, {
+		"title": "Events",
+		"items": [{
+			"title": "Manimation",
+			"img": "data/pictures/news/manimation.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		}, {
+			"title": "TMRW",
+			"img": "data/pictures/news/tmrw.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Future Everything",
+			"img": "data/pictures/news/future_everything.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		},
+		{
+			"title": "Manchester International Festival (MIF)",
+			"img": "data/pictures/news/manchester_festival.png",
+			"content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"
+		}],
+		"foot_img" : "data/pictures/news/news_foot_2.png"
+
+	}]
+}

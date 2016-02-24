@@ -1,0 +1,75 @@
+{
+	"blocks": [{
+		"title": "Overview",
+		"url": "#/overview",
+		"preview_src": "data/pictures/main/overview.png",
+		"params": {
+			"height": "284",
+			"class": "left col-xs-6 fadeIn animated animation-delay-2"
+		}
+	}, {
+		"title": "Map",
+		"url": "#/map",
+		"preview_src": "data/pictures/main/map.png",
+		"params": {
+			"height": "179",
+			"class": "right col-xs-3 fadeIn animated animation-delay-1"
+		}
+	}, {
+		"title": "companies",
+		"url": "#/companies",
+		"preview_src": "data/pictures/main/companies.png",
+		"params": {
+			"height": "179",
+			"class": "right col-xs-3 fadeIn animated animation-delay-4"
+		}
+	}, {
+		"title": "places",
+		"url": "#/places",
+		"preview_src": "data/pictures/main/places.png",
+		"params": {
+			"height": "220",
+			"class": "col-xs-6 right fadeIn animated animation-delay-3"
+		}
+	}, {
+		"title": "Skills",
+		"url": "#/skills",
+		"preview_src": "data/pictures/main/skills.png",
+		"params": {
+			"height": "170",
+			"class": "col-xs-6 fadeIn animated animation-delay-7"
+		}
+	}, {
+		"title": "Funding",
+		"url": "#/funding",
+		"preview_src": "data/pictures/main/funding.png",
+		"params": {
+			"height": "255",
+			"class": "col-xs-3 right fadeIn animated animation-delay-5"
+		}
+	}, {
+		"title": "People & networks",
+		"url": "#/people_and_networks",
+		"preview_src": "data/pictures/main/people_n_networks.png",
+		"params": {
+			"height": "255",
+			"class": "col-xs-3 right fadeIn animated animation-delay-6"
+		}
+	}, {
+		"title": "Research",
+		"url": "#/research",
+		"preview_src": "data/pictures/main/research.png",
+		"params": {
+			"height": "200",
+			"class": "col-xs-3 fadeIn animated animation-delay-3"
+		}
+	}, {
+		"title": "News",
+		"url": "#/news",
+		"preview_src": "data/pictures/main/news.png",
+		"params": {
+			"height": "200",
+			"class": "col-xs-3 fadeIn animated animation-delay-8"
+		}
+	}]
+}

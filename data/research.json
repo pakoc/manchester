@@ -1,0 +1,114 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"overview":"The success of the UK economy is increasingly dependent on knowledge-based industries and on capabilities in science, technology, innovation and research. Greater Manchester is an undisputed centre of innovation and disruption in the Creative, Digital and Tech sectors due in no small part to research that is being conducted by centres of excellence within our universities and in collaboration with industry.",
+	"items": [
+		{
+			"title": "Networking & Telecommunications Research Centre", 
+			"img": "data/pictures/research/Networking_Tele2.png", 
+			"info": "At the University of Bolton the Networking & Telecommunications Research Centre undertakes both pure and applied research in the general field of telecommunications and computer networking including computer networking technologies, wireless systems, networked multimedia applications, quality of service, mobile networking, intelligent buildings, context driven information systems and communication protocols.", 
+			"lat":"-",
+			"lng:"-"
+		},
+		{
+			"title": "Centre for Computing and Informatics Research", 
+			"img": "data/pictures/research/MU-Development_Informatics2.png", 
+			"info": "At Manchester Metropolitan University the Centre for Computing and Informatics Research is inherently inter-disciplinary, and encompasses intelligent systems, novel computation, logic, networks and distributed systems, and image and sensory computation.", 
+			"lat":"",
+			"lng:""
+		},
+		{
+			"title": "National Centre for Text Mining", 
+			"img": "data/pictures/research/Text_Mining__0.png", 
+			"info": "The National Centre for Text Mining (NaCTeM) at the University of Manchester is the first publicly-funded text mining centre in the world. We provide text mining services in response to the requirements of the UK academic community. NaCTeM is operated by the University of Manchester.<br> NaCTeM has developed text mining services and service exemplars for the UK academic community. Our services are underpinned by a number of generic natural language processing tools.", 
+			"lat":"53.47290332280488",
+			"lng:"-2.235833178962846"
+		},
+		{
+			"title": "Dalton Research Institute", 
+			"img": "data/pictures/research/MM-Dalton_Research_Institute2.png", 
+			"info": "The Dalton Research Institute is based in the Faculty of Science and Engineering at Manchester Metropolitan University and is comprised of established and internationally recognised research groups in the following areas: environment science, materials science, computer science and general engineering.", 
+			"lat":"53.47215224821996",
+			"lng:"-2.239948618260673"
+		},
+		{
+			"title": "Data Mining & Pattern Recognition Research Centre", 
+			"img": "data/pictures/research/SU-Data_Mining_&_Pattern_Recognition 2.png", 
+			"info": "The Data Mining and Pattern Recognition Research Centre at the University of Salford is developing novel methods and systems for the analysis and recognition of images and other data, learning behaviours and causal models that have a wide range of potential applications including prediction of credit ratings, restoration of historical documents, medical diagnosis, programme ratings, semantic tagging, segmentation of types of viewers and their behaviours, text mining and retrieval, intelligent scheduling, user modeling, and as embedded self-learning components in intelligent agents.", 
+			"lat":"",
+			"lng:""
+		},
+		{
+			"title": "The Informatics Research Institute (IRIS)", 
+			"img": "data/pictures/research/SU-(IRIS)2__0.png", 
+			"info": "The University of Manchester's Informatics Research Institute is a 6* rated Research Institute and one of the leading multidisciplinary research institutes that brings together expertise in social, technological and computational aspects of information systems.", 
+			"lat":"",
+			"lng:""
+		},
+		{
+			"title": "Centre for Virtual Environments & Future Media", 
+			"img": "data/pictures/research/SU-for_Virtual_Environments_and_Future_Media .png", 
+			"info": "The Centre for Virtual Environments at the University of Salford has been at the cutting edge of Virtual Reality (VR) for over ten years. It has an excellent research rating and its balanced emphasis on teaching, research and enterprise is unique. The CVE vision is to lead research in virtual environment technology and fuel its take up through a focused program of research, teaching and technology transfer, maintaining its excellent research rating by being a centre of excellence, unique in Europe, able to meet diverse application needs through the widest range of collaborative, intelligent, immersive, pervasive and augmented reality technologies, and the deepest knowledge of how to apply them.", 
+			"lat":"",
+			"lng:""
+		},
+		{
+			"title": "Thinklab", 
+			"img": "data/pictures/research/SU-ThinkLab__0.png", 
+			"info": "THINKlab at the University of Salford is a futuristic and spacious research environment with state-of-the-art facilities. The space facilitates research related to Information and Communication Technologies, providing answers to challenges faced by industry, commerce and the community. ThinkLab is committed to conducting interdisciplinary research to address complex social, economic and environmental challenges. Research at the ThinkLab aims to develop innovative digital solutions to the challenges faced by industry and the community.", 
+			"lat":"53.48472478096218",
+			"lng:"-2.271178479741645"
+		},
+		{
+			"title": "The Centre for Development Informatics (CDI)", 
+			"img": "data/pictures/research/MM-Computing_and_Informatics_Research2.png", 
+			"info": "The Centre for Development Informatics (CDI) at the University of Manchester is a multidisciplinary centre researching the role of information and communication technologies (ICTs) in socio-economic development.<br> Research in CDI focuses on eight main themes:<br>Business, Informatics and Development<br>e-Governance for Development<br>IT Sector Development<br>ICTs and Sustainability<br>ICT Policy", 
+			"lat":"53.46687510978091",
+			"lng:"-2.235637983641979"
+		},
+		{
+			"title": "Health eResearch Centre (HeRC)", 
+			"img": "data/pictures/research/MU-MHealth_innovation2_.png", 
+			"info": "A new multimillion-pound centre of excellence in electronic health data research has been set up in Manchester led by the University of Manchester. HeRC will research new ways of harnessing electronic health data to improve care for patients and communities.", 
+			"lat":"53.46482214963838",
+			"lng:"-2.230868138492484"
+		},
+		{
+			"title": "University of Manchester", 
+			"img": "data/pictures/research/Uni_Manchester_0.png", 
+			"info": "The University of Manchester is Britain's largest single-site university with a proud history of achievement and an ambitious agenda for the future. Building on its track record of innovation, the University of Manchester has continued to adapt successfully to the needs of students by investing in world-class facilities for teaching, learning, research and recreation. The University's vision is to make Manchester, already an internationally distinguished centre of research, innovation, learning and scholarly enquiry, one of the leading Universities in the world by 2015.", 
+			"logo": "data/pictures/research/Man_UniCrest_0.png",
+			"lat":"53.46680149632254",
+			"lng:"-2.233686317998424"
+		},
+		{
+			"title": "Manchester Metropolitan University", 
+			"img": "data/pictures/research/Uni_Metropolitan.png", 
+			"info": "Manchester Metropolitan University is the largest campus-based undergraduate university in the UK with a total student population of more than 37,000. Their claim is to be the University for World Class professionals with an emphasis on vocational education and employability. With a history dating back 150 years, they have a combination of the traditional and the contemporary that sets MMU apart and gives them their distinct character. They are the UK’s most popular University as measured by undergraduate applications.", 
+			"logo": "data/pictures/research/ManMet_UniCrest_0.png",
+			"lat":"53.47089198523157",
+			"lng:"-2.238974621539417"
+		},
+		{
+			"title": "University of Bolton", 
+			"img": "data/pictures/research/Uni_Bolton2.png", 
+			"info": "The University of Bolton is a public university in Greater Manchester with approximately 14,000 students across all sites and courses, with 700 academic and professional staff. The university has recently been successful in winning Government approval for a state of the art ?10 million University Technical College (UTC) on campus which will focus on Health Sciences and Engineering Technologies and it will provide a clear line of sight towards employment and higher learning.", 
+			"logo": "data/pictures/research/Bolton_UniCtrest_0.png",
+			"lat":"53.57258105317798",
+			"lng:"-2.438169459194412"
+		},
+		{
+			"title": "University of Salford", 
+			"img": "data/pictures/research/Uni_Salford2.png", 
+			"info": "The University of Salford is a friendly, vibrant and pioneering University. They are currently the only University to have a presence at MediaCityUK, with a space designed to encourage creativity, innovation and collaboration between academics, students, professionals and industry. They are also the University partner for the MediaCityUK University Technical College (UTC) dedicated to providing 14-19 year olds with an outstanding education in the core curriculum combined with the right skills to access careers in the digital, media and creative industries.", 
+			"logo": "data/pictures/research/Salford_UniCrest_0.png",
+			"lat":"53.48730875565855",
+			"lng:"-2.274713680259879"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+<div class="wrapper">
+	 
+	 <style>	 
+		 
+	 </style>
+		<div class="col-xs-12">
+			<div class="col-xs-4 block" >
+				<div>{{selected.title}}</div>
+				<div ng-bind-html="trustAsHtml(selected.media_content)"></div>
+				<ul class="items_feed_right">
+					<li ng-repeat="item in getLimitedItems()" ng-class="{'current bounceIn animated': isSelected(item)}" ng-click="setSelection(item)" style="min-height: 30px; ">{{item.link_title}}</li>
+				</ul>
+				<div ng-bind-html="trustAsHtml(selected.media_content2)"></div>
+
+			</div>
+			<div class="col-xs-8 block">
+				<img src = "{{selected.map_img}}"> 
+				<div class="col-xs-5 block">
+					<div ng-bind-html="trustAsHtml(selected.column1_img)"></div>
+					<div ng-bind-html="trustAsHtml(selected.column1_title)"></div>
+					<div ng-bind-html="trustAsHtml(selected.column1_info)"></div>
+				</div>
+				<div class="col-xs-7 block">
+					<div ng-bind-html="trustAsHtml(selected.column2_img)"></div>
+				</div>
+			</div>
+		</div>	 
+</div><!--end wrapper-->

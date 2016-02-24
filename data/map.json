@@ -1,0 +1,875 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"sectors": [{
+			"title": "Software & Data",
+			"id": "SoftwareAndData",
+			"number": "2654",
+			"total" : "3000",
+			"detail_chart" : [
+				{
+					"label"  : "<1",
+					"number" : "165",
+					"total"  : "3000"
+				},
+				{
+					"label"  : "<1",
+					"number" : "165",
+					"total"  : "3000"
+				},
+				{
+					"label"  : "<1",
+					"number" : "165",
+					"total"  : "3000"
+				} 
+			],
+			"bar_color" : "#00673C",
+
+			"info": "Manchester is home to a large number of world class software houses. With a steady supply of talented developers coming out of Manchester’s universities and companies like Bright Future Software training apprentices in a variety of software languages. Many companies such as the BBC and Thoughtworks use Manchester as a hub for their software development.<br>Manchester also offers a wealth of big data market opportunities across healthcare, public services, financial services and media."
+		},{
+			"title": "E-Commerce",
+			"id": "ECommerce",
+			"number": "860",
+			"total" : "3000",
+			"bar_color" : "#007AB9",
+			"info": "Manchester has a strong e-commerce cluster with many high growth e-commerce companies such as Kitbag, Missguided, Boohoo and AO. The sector is complemented by the growth in the mobile payments sector in the city with global companies such as WorldPay, home growth companies such as App55 and large financial firms such as Barclays all leading the way in mobile payments."
+		},{
+			"title": "E-Health",
+			"id": "EHealth",
+			"number": "255",
+			"total" : "3000",
+			"bar_color" : "#0F3F8D",
+			"info": "With the strengths of the Universities and the flagship European Connected Health Alliance, Manchester provides an ideal eco-system for digital health companies to grow. Large corporates like Hitachi through to innovative start-ups are able to access a unique network of health and social care providers, commissioners, industry, voluntary sector, patients and higher education."
+		},{
+			"title": "Games & AR",
+			"id": "GamesAndAR",
+			"number": "142",
+			"total" : "3000",
+			"bar_color" : "#5AAB4D",
+			"info": "Games development in the North West generates ?300 million a year, employing more that 1,000 skilled individuals. There are a further 3,000 freelance technologists and artists in the sector. Manchester is home to a variety of companies within the games and alternative reality sector who are creating content for a variety of purposes, from console & mobile gaming, through e-learning and training, to marketing and advertising among others."
+		},{
+			"title": "Advertising & Digital Production",
+			"id": "AdvertisingAndDigitalProduction",
+			"number": "752",
+			"total" : "3000",
+			"bar_color" : "#00A69E",
+			"info": "Manchester is the largest advertising, marketing and design centre after London generating ?1.25 billion for the economy. The type of companies in this sector is varied and tends to defy definition. They offer services including, but not limited to: advertising, PR, graphic design, digital design, branding, digital strategy, media buying, online marketing service, user experience design, video content production, prototyping, architectural design, as well as development of websites, platforms, apps, games, and more."
+		},{
+			"title": "Broadcast & Media Production",
+			"id": "BroadcastAndMediaProduction",
+			"number": "810",
+			"total" : "3000",
+			"bar_color" : "#66348D",
+			"info": "Manchester is a centre of excellence for TV, Radio and Children’s Media. It has been a major centre for TV production since the 1950’s and is now home to the BBC North & ITV and the only place where both share a site in the UK. There is also an ecosystem of innovative start-ups and SMEs working on next generation technologies to support some of the most relevant trends in Broadcast & Media Production."
+		}
+	],
+	"places": [
+		{
+			"title": "MediaCity UK",
+			"id": "MediaCityUK",
+			"info": "MediaCityUK is the magnet that attracts the bigger players in the supply chain (BBC, ITV, BUPA), who in turn can commission work from the eclectic and exciting mix of more than 200 businesses which call MediaCityUK their home. MediaCityUK has an excellent mix of academic players, such as the University of Salford and training enterprises within their community. Some 15,000 jobs are forecasted for the site over the next 20 years.",
+			"img": "data/pictures/companies/Media_City1.png",
+			"companies": ["RED Production Company","KMS (Digital Health)","ITV","Bright Future Software","Yippee Entertainment","BBC","Deluxe Media","iburbia","Formissimo (Analytics)","Deltatre (Sports tech)","SIS","Dock10","SPACE Interactive Media Labs"]
+		},{
+			"title": "The Sharp Project",
+			"id": "TheSharpProject",
+			"info": "The Sharp Project is home to over 60 digital entrepreneurs, businesses and production companies who specialise in creating and distributing cutting-edge digital content, new media, film and television in a highly sought-after collaborative ecosystem. It houses 200,000 sq ft of high-quality & cost-effective offices, workspaces, production stages & studios as well as a range of hi-spec event spaces, green-screen studios and post-production facilities available for hire.",
+			"img": "data/pictures/companies/SharpProject1.png",
+			"companies": ["EON Reality","JD SPORTS","Degree 53","Space Project","doodledo MOTION","Touchsoft","AppLearn","Playground Squad","AYTU Games","Aequitas","Digital Next"]
+		},{
+			"title": "The Corridor",
+			"id": "TheCorridor",
+			"info": "The Corridor is a unique location for knowledge-intensive businesses seeking a networked and collaborative environment. The Corridor generates about 25% of the city’s GVA. It is home to two of the UK’s leading universities: The University of Manchester, and Manchester Metropolitan University, making it the largest academic campus in the UK. Businesses here range from innovative start-ups to multinationals from the financial & professional services, creative & digital, and health & biomedical sectors, among others.",
+			"img": "data/pictures/companies/Corridor1.png",
+			"companies": ["UKFast","Protime","11 Out of 10","ANS Group","Godel Technologies Europe","Bio-Analytical Technologies","Exleaz","Metronet UK","Cubic Motion","CACI", "RED Production Company"]
+		},{
+			"title": "The Northern Quarter",
+			"id": "TheNorthernQuarter",
+			"info": "Self-starting and self-supporting, the Northern Quarter is a real life story of how hubs grow organically. A vibrant and eclectic mix of 150 digital and creative companies have made their homes in the converted Victorian cotton and textile warehouses, where they work and play alongside dozens of cafes, galleries, fashion designers and market traders. The atmosphere and community has attracted support sites for the sector, making it a highly-attractive and successful digital community close to the city’s business centre.",
+			"img": "data/pictures/companies/Northern_Q1.png",
+			"companies": ["Boohoo.com","Code Computerlove","NiftyDrives","Couchbase","Cyclr","Base Clarity","Sharemystorage.com","Moment.US"]
+		},{
+			"title": "City Centre",
+			"id": "CityCenter",
+			"info": "Manchester city centre is the central business district of Greater Manchester. Many areas have a distinctive character with identifiable clusters such as The Northern Quarter, listed separately, Castlefield, home to companies such as Weber Shandwick and Bauer Media and Spinningfields, home to the Financial and Professional Services sector primarily. The rest of the city centre houses companies such as Studio Liddell, Google and LateRooms.com among others.",
+			"img": "data/pictures/companies/City_centre.png",
+			"companies": ["Google","LateRooms.com","Bauer Media","Dentsu Aegis (Carat)","Weber Shandwick","NCC Group","Thoughtworks"]
+		},{
+			"title": "South Manchester",
+			"id": "SouthManchester",
+			"info": "There are a number of creative, digital and ICT companies in South Manchester. Its proximity to the airport, great transport links & buildings with plenty of parking, make it a viable option for companies wanting to stay away from the busier city centre. Altrincham is home to animation companies such as Mackinnon & Saunders and Factory Transmedia, while Didsbury is home to such companies as CISCO, IBM, Cosgrove Hall Fitzpatrick & TBWA/Manchester to name a few.",
+			"img": "data/pictures/companies/South_Manchester_0.png",
+			"companies": ["Microsoft","IBM","TBWA / Manchester","Mackinnon & Saunders","Cisco","EMC","Cosgrove Hall Fitzpatrick","Factory TM", "MacKinnon & Saunders"]
+		}		
+	],
+	"items": [{
+			"title": "EON Reality",
+			"featured": "1",
+			"info": "EON Reality, the world’s leading interactive 3D software provider for businesses and education, has opened its European headquarters in Manchester. The Manchester HQ offers interactive and digital media technology solutions, training and professional services as well as providing access to state-of-the-art interactive 3D technologies including a virtual reality showroom, training room, project room, development lab, and 3D classroom infrastructure to create a centre of excellence in Manchester.",
+			"logo": "data/pictures/companies/eon/Eon_Logo.png",
+			"media_content" : "<img src=data/pictures/companies/Eon_0.png>",
+			"lat":  "53.50277302283154" ,
+			"lng": "-2.202543199926577",
+			"sector": "GamesAndAR",
+			"place": "TheSharpProject",
+			"alt_logo": "data/pictures/companies/eon/eon_logo.png",
+			"alt_media_content" : "<iframe width=\"520\" height=\"293\" src=\"https://www.youtube.com/embed/lxZhHiV_SlA\" frameborder=\"0\" allowfullscreen></iframe>",
+			"focus": [
+				"Alternative Reality",
+				"e-Learning",
+				"Training"
+			],
+			"size": "0-50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/Ken_Swain__0.png",
+				"specializations": [
+					"3D",
+					"3D Visualisation",
+					"Digital Media"
+				],
+				"previous": "Previous: Design Academy Ltd - Kognitiv",
+				"job_title": "MD, EON Reality"
+			}			
+		},
+		{
+			"title": "IBM",
+			"featured": "1",
+			"info": "IBM is a global business and technology leader, innovating in research and development to shape the future of society at large. IBM in Manchester is home to all the key IBM business units as well as a systems software development laboratory. With a focus on IBM Power Systems, the engineers in the Lab develop optimisation, security, and virtualisation software to help clients manage emerging workloads designed to reduce data centre costs.",
+			"logo": "data/pictures/companies/IBM_Logo2.png",
+			"media_content" : "<img src=data/pictures/companies/IBM_0.png>",
+			"lat":  "53.42384184661469" ,
+			"lng": "-2.326190465382566",
+			"sector": "SoftwareAndData",
+			"place": "SouthManchester",
+			"alt_logo": "data/pictures/companies/ibm/ibm.png",
+			"alt_media_content" : "<img src=data/pictures/companies/video2.jpg>",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"size": "1000",
+			"age": "10+",
+			"person": {
+				"name": "Martyn Spink",
+				"position": "Lab Manager",
+				"photo": "data/pictures/companies/dir2.jpg",
+				"specializations": [
+					"Software Development",
+					"Software Engineering",
+					"Linux"
+				],
+				"previous": "Previous: Director of Engineering, Transitive Limited"
+			}
+		},
+		{
+			"title": "Boohoo.com",
+			"featured": "1",
+			"logo": "data/pictures/companies/Boohoologo.png",
+			"info": "From Manchester’s best kept fashion secret to one of the fastest growing international etailers, boohoo.com has quickly evolved into a global fashion leader of its generation. Boohoo.com is the UK's second biggest 'pure-play' retail business valued at ?500m> the company was founded in Manchester and now employs over 600 people in the city.",
+			"media_content" : "<img src=data/pictures/companies/Boohoo_2.png>",
+			"lat":  "53.48430302846059" ,
+			"lng": "-2.238372906568867",
+			"sector": "ECommerce",
+			"place": "TheNorthernQuarter",
+			"focus": [
+				"e-commerce"
+			],
+			"size": "600",
+			"age": "8",
+			"person": {
+				"name": "Eleanor Wheeler",
+				"position": "Senior Online Marketing Executive",
+				"photo": "data/pictures/companies/Eleanor_Wheeler.jpg",
+				"specializations": [
+					"Online Advertising",
+					"Digital Media",
+					"Advertising"
+				],
+				"previous": "Senior Digital Media Executive, Universal McCann",
+				"job_title": "Performance Marketing Manager, booHoo.com"
+			}
+		},
+		{
+			"title": "Bright Future Software",
+			"featured": "1",
+			"logo": "data/pictures/companies/logo4.jpg",
+			"info": "Bright Future Software is specialists in onshore software development and digital technology. It is their objective to deliver these solutions by recruiting the brightest and most highly motivated school-leavers and graduates, who work under the expert guidance and scrutiny of established specialists.",
+			"alt_info": "alt info",
+			"media_content" : "<img src=data/pictures/companies/video4.jpg>",
+			"lat":  "53.47350694468428" ,
+			"lng": "-2.299330374190208",
+			"sector": "SoftwareAndData",
+			"place": "MediaCityUK",
+			"focus": [
+				"Software development",
+				"mobile development",
+				"Web Design"
+			],
+			"size": "250",
+			"age": "2",
+			"person": {
+				"name": "Eudie Thompson",
+				"position": "CEO",
+				"photo": "data/pictures/companies/dir4.jpg",
+				"specializations": [
+					"Enterpreneurship",
+					"Leadership",
+					"Management"
+				],
+				"previous": "Previous: Strategy Consultant, Elmfield Training"
+			}
+		},
+		{
+			"title": "UKFast",
+			"featured": "1",
+			"logo": "data/pictures/companies/UK_fast_Logo.png",
+			"info": "UKFast is one of the UK's leading hosting and colocation providers, supplying dedicated server hosting, critical application hosting, and cloud hosting solutions. UKFast fully-own, manage and operate a carbon- and carrier-neutral data centre complex, which offers over 30,000 sq ft of enterprise-grade facilities for colocating IT equipment.",
+			"media_content" : "<img src=data/pictures/companies/UK_Fast.png>",
+			"lat":  "53.46297805842647" ,
+			"lng": "-2.245677734666887",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor",
+			"focus": [
+				"Managed Hosting",
+				"Cloud Hosting",
+				"Critical Application Hosting"
+			],
+			"size": "0-50",
+			"age": "4",
+			"person": {
+				"name": "Laurence Jones",
+				"position": "CEO",
+				"photo": "data/pictures/people/Lawrence_Jones-UKFast.png",
+				"specializations": [
+					"Management",
+					"Cloud Computing",
+					"Sales"
+				],
+				"previous": "Previous: Director of Sales, Granada Plc"
+			}
+		},
+		{
+			"title": "MacKinnon & Saunders",
+			"featured": "1",
+			"logo": "data/pictures/companies/Mackinnon_&_Saunders_Logo.png",
+			"info": "With over 30 years of experience Mackinnon & Saunders are one of the world’s leading puppet making companies specialising in the design and construction of characters for television shows, feature films and commercials. They have brought some of the world’s best known animated characters to life - from Bob the Builder and Postman Pat, to Tim Burton’s Corpse Bride and Wes Anderson’s Fantastic Mr Fox. Their new digital 2D animation studio is currently producing Wanda & The Alien.",
+			"media_content" : "<img src=data/pictures/companies/Mackinnon_&_Saunders_.png>",
+			"lat":  "53.39365366259517" ,
+			"lng": "-2.372115686036982",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "SouthManchester",
+			"focus": [
+				"Stop Motion Animation",
+				"Pupper Making",
+				"2D digital animation"
+			],
+			"size": "50-100",
+			"age": "19",
+			"person": {
+				"name": "Peter Saunders",
+				"position": "Founder",
+				"photo": "data/pictures/companies/dir6.jpg",
+				"specializations": [
+					"Animation",
+					"Storyboarding",
+					"Stop Motion"
+				],
+				"previous": "Previous: Strategy Consultant, Elmfield Training"
+			}
+		},
+		{
+			"title": "Gosgrove Hall Fitzpatrick",
+			"featured": "1",
+			"logo": "data/pictures/companies/Cosgrove_Logo_0.png",
+			"info": "Cosgrove Hall Fitzpatrick Entertainment creates entertaining, innovative and brilliantly characterised children’s television shows, drawing on both the development talents of its creative team and Cosgrove Hall’s 40-year legacy as one of the UK’s most respected and influential producers of animated programmes. The company operates from its historic home in Manchester and has offices in London and New York.",
+			"media_content" : "<img src=data/pictures/companies/Cosgrove_Hall_0.png>",
+			"lat":  "53.4084326510328" ,
+			"lng": "-2.225441057871813",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "SouthManchester",
+			"alt_logo": "data/pictures/companies/logo7.jpg",
+			"alt_media_content" : "<img src=data/pictures/companies/video7.jpg>",
+			"focus": [
+				"3D animation",
+				"2D animation",
+				"Documentary Production"
+			],
+			"size": "0-50",
+			"age": "21",
+			"person": {
+				"name": "Rachel Giles",
+				"position": "Group Operations Director",
+				"photo": "data/pictures/companies/dir7.jpg",
+				"specializations": [
+					"Acounting",
+					"Restructuring",
+					"Due Diligence"
+				],
+				"previous": "Previous: Consultant, Chantrey, Vellacott DFK"
+			}
+		},
+		{
+			"title": "Code Computerlove",
+			"featured": "1",
+			"logo": "data/pictures/companies/Code_com_Love.png",
+			"info": "Code Computerlove is an award winning digital agency based in Manchester and London. Established in 1999, their 80-strong team of Computerlovers collaboratively offer cross-platform digital solutions that include Strategy & User Experience, Design & Build, Performance & Optimisation, Mobile & Tablet, Campaigns & Social and Search & Media.",
+			"media_content" : "<img src=data/pictures/companies/Code_Computer.png>",
+			"lat":  "53.48232415281048" ,
+			"lng": "-2.234610836827296",
+			"sector": "SoftwareAndData",
+			"place": "TheNorthernQuarter",
+			"alt_logo": "data/pictures/companies/logo8.jpg",
+			"alt_media_content" : "<img src=data/pictures/companies/video8.jpg>",
+			"focus": [
+				"User Experience",
+				"Search & Media",
+				"Campaigns & Social"
+			],
+			"size": "50-100",
+			"age": "16",
+			"person": {
+				"name": "Tony Foggett",
+				"position": "CEO",
+				"photo": "data/pictures/companies/Tony_Foggett_0.png",
+				"specializations": [
+					"Digital Marketing",
+					"SEO",
+					"Digital Media"
+				],
+				"previous": "Previous: Head of Digital, Mainstream",
+				"job_title": "Founder, Code Computerlove"
+			}
+		},
+		{
+			"title": "KMS (Digital Health)",
+			"featured": "1",
+			"logo": "data/pictures/companies/KMS_Logo.png",
+			"info": "KMS is currently developing the KMS Wristband, a wearable communications safety device in conjunction with the School of Electrical Engineering at the University of Manchester. It is a safety device for children and vulnerable adults based on GSM cellular and assisted GPS technology. It enables the wearer to initiate a cellular call to one of up to 5 predefined carers with a one touch button. Carers can track the whereabouts of the wearer from a smart device/web app utilising GPS technology.",
+			"media_content" : "<img src=data/pictures/companies/KMS2.png>",
+			"lat":  "53.47297261228059" ,
+			"lng": "-2.300795659463475",
+			"sector": "EHealth",
+			"place": "MediaCityUK",
+			"focus": [
+				"e-Health",
+				"Innovation",
+				"Wearable Technology"
+			],
+			"size": "0-50",
+			"age": "2",
+			"person": {
+				"name": "Chris Etchells",
+				"position": "MD",
+				"photo": "data/pictures/companies/KMS_Portrait_0.png",
+				"specializations": [
+					"Social Housing",
+					"Local Government",
+					"Wearable Tech"
+				],
+				"previous": "Previous: Director, CMP UK LTD",
+				"job_title": "Director KMS"
+			}
+		},
+		{
+			"title": "RED Production Company",
+			"logo": "data/pictures/companies/Red_Production_0.png",
+			"info": "RED Production Company was set up in 1998 to work with the best writers on modern, innovative and entertaining programming. The Manchester-based indie has since produced some of the UK’s most popular drama series working with esteemed writers including Russell T Davies, Bill Gallagher, Sally Wainwright, Danny Brocklehurst and Sean Conway.",
+			"media_content" : "<img src=data/pictures/companies/Red_Production.png>",
+			"lat":  "53.4730101" ,
+			"lng": "-2.3002742",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Dock10",
+			"logo": "data/pictures/companies/Dock10_logo_0.png",
+			"info": "Touchsoft provide Android, iOS, Windows Phone & Web applications development services creating world-class software of the highest quality with an excellent attention to detail. Touchsoft has recently worked with Manchester NHS to design and develop 'My Support Plan', an iPad application to help patients apply for and manage their Personal Health Budget.",
+			"media_content" : "<img src=data/pictures/companies/343.jpeg>",
+			"lat":  "53.47316786246652" ,
+			"lng": "-2.300040746626633",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Space Interactive Media Labs",
+			"logo": "data/pictures/companies/Space_logo_0.png",
+			"info": "The SPACE Interactive Media Labs are a purpose built state of the art UX, CX, digital asset testing environment and much more besides. It’s where clients like the BBC, Sony, Microsoft and an array of innovative SME’s undertake early stage UX testing. Our clients undertake a wide variety of activities including, but not restricted to Customer Journey Mapping, UX, CX Testing & Consulting, Usability Testing Mobile, Web, Social, Interactive Broadcast Assets.",
+			"media_content" : "<img src=data/pictures/companies/Space_labs.png>",
+			"lat":  "53.4724089" ,
+			"lng": "-2.299933",
+			"sector": "SoftwareAndData",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "SIS",
+			"logo": "data/pictures/companies/SIS_logo_0.png",
+			"info": "SIS, a world leader in the television industry, has a home at MediaCityUK. The internationally renowned company run dock10 in partnership with Peel and operate the largest fleet of satellite uplink and outside broadcast trucks in Europe. SIS’s significant production and engineering operations are based at MediaCityUK in the Blue Tower. They have built the largest broadcast teleport in the north of the UK, connecting MediaCityUK to the global broadcast market.",
+			"media_content" : "<img src=data/pictures/companies/SIS.png>",
+			"lat":  "53.47468728544742" ,
+			"lng": "-2.296031574394303",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Yippee Entertainment Ltd",
+			"logo": "data/pictures/companies/Yippee_logo.png",
+			"info": "Yippee is a digital entertainment company developing games and apps across all major platforms, including social networks, smartphones, tablets and IPTV content; as well as traditional gaming consoles. With over 130 years experience across the management team and s string of hit titles to our credit, your licences and brands couldn't be in safer hands.",
+			"media_content" : "<img src=data/pictures/companies/Yippee.png>",
+			"lat":  "53.4733245" ,
+			"lng": "-2.2996965",
+			"sector": "GamesAndAR",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Deltatre",
+			"logo": "data/pictures/companies/Deltatre_logo_0.png",
+			"info": "The future of global sport engagement is multi-platform and social. As a result of deltatre’s innovation, today’s greatest sport events are more inclusive; sport fans can become an active part of the event, connecting socially and sharing their passion, wherever they are. By harnessing their experience, technical skills and passion for sport, the future is open and ready for innovation that will take sports coverage to the next level.",
+			"media_content" : "<img src=data/pictures/companies/Deltatre_(Sports_tech).png>",
+			"lat":  "53.47289976188901" ,
+			"lng": "-2.300564754263115",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Formissimo",
+			"logo": "data/pictures/companies/Formisso_logo.png",
+			"info": "Formisimo is a cloud-based analytics tool that shows businesses why their customers are dropping out of their checkout or enquiry process. It measures how users engage with online forms and checkouts, highlights the pain points and shows how small changes can lead to big improvements in conversion rates. Trusted by the Financial Times, WeBuyAnyCar, Asda, SecretEscapes and a thousand other companies.",
+			"media_content" : "<img src=data/pictures/companies/Formissimo.png>",
+			"lat":  "53.4746149" ,
+			"lng": "-2.2963241",
+			"sector": "SoftwareAndData",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "ITV",
+			"logo": "data/pictures/companies/ITV_Logo_0.png",
+			"info": "Considered a flagship facility for the UK's biggest commercial programme provider, the Orange tower is now home to over 500 staff including teams from CITV, Granada Reports, factual, entertainment, drama, post production, The Jeremy Kyle show and various business support services. MediaCityUK is also home to the world’s longest running continuing drama - Coronation Street, which is produced from a state-of-the-art production centre based in a 7.7 acre site next to the Imperial War Museum.",
+			"media_content" : "<img src=data/pictures/companies/ITV.png>",
+			"lat":  "53.4730878" ,
+			"lng": "-2.297085",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "BBC",
+			"logo": "data/pictures/companies/BBC_Logo.png",
+			"info": "The BBC has been operational at MediaCityUK in Manchester since 2011, producing thousands of hours of content for television, radio and online. Around 2,700 staff work in twenty-six departments including BBC Children's, BBC Learning, BBC Radio 5 live, BBC Sport, BBC Radio Manchester and BBC Breakfast as well as Religion & Ethics, the BBC Philharmonic and parts of Research & Development, Drama and Comedy.",
+			"media_content" : "<img src=data/pictures/companies/BBC_0.png>",
+			"lat":  "53.4728987442186" ,
+			"lng": "-2.298444052829144",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "Deluxe Media",
+			"logo": "data/pictures/companies/deluxe-media-logo_0.jpg",
+			"info": "Deluxe Media is a fully integrated group of global facilities providing subtitling, access services, localisation, content and media post production services to the broadcast, theatrical, hospitality, home entertainment, digital distribution and advertising industries. By providing innovative supply chain solutions, Deluxe Media helps market, enrich and enable media movement to all platforms and all consumers throughout the world, for viewing on any device.",
+			"media_content" : "<img src=data/pictures/companies/Deluxe.png>",
+			"lat":  "53.47171061667998" ,
+			"lng": "-2.299020652825643",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "iBurbia Studios",
+			"logo": "data/pictures/companies/iburbialogo.png",
+			"info": "iBurbia is an interactive media lab and user interface (UX) venue for the TV and digital media industries. It is the most advanced research and education venue in Greater Manchester and is allows media companies to investigate the complete UK landscape for TV, mobile, PC and games devices. iBurbia MediaCityUK are the only facility in the NW to offer a complete range of TV and games services to clients.",
+			"media_content" : "<img src=data/pictures/companies/iburbia.png>",
+			"lat":  "53.47417300000001" ,
+			"lng": "-2.297557",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "MediaCityUK"
+		},
+		{
+			"title": "The Space Project",
+			"logo": "data/pictures/companies/Space_Project_logo.png",
+			"info": "The Space Project is a purpose built production stage complex. The 360,000 sq ft site is 5 minutes east from the heart of the city. It offers over 55,000 sq. ft. of high-spec studio space plus purposefully designed dressing and make up facilities, laundry, prop storage / workshops and extensive parking. The building has flexible office space for short and long term production rentals with high-speed connectivity and 24/7 security as well as onsite catering.",
+			"media_content" : "<img src=data/pictures/companies/Space_Project_2_0.png>",
+			"lat":  "53.46926732251264" ,
+			"lng": "-2.199411749338183",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "AppLearn",
+			"logo": "data/pictures/companies/applearn-logo-150x150.jpeg",
+			"info": "AppLearn helps large organisations to increase user adoption and engagement for HR software by producing multilingual presenter based training videos that are integrated directly into the software application for 24/7 single click access. This provides 'always on' training to every employee and manager anywhere in the world in any language.",
+			"media_content" : "<img src=data/pictures/companies/Applearn.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "GamesAndAR",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "Playground Squad",
+			"logo": "data/pictures/companies/Playgound_Squad_Logo.png",
+			"info": "Playground Squad is one of the oldest and most highly rated games educations in all of Europe. Our three disciplines cover all aspects of game production and are being taught using individual coaching team based learning and internships.",
+			"media_content" : "<img src=data/pictures/companies/Playground_squad.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "GamesAndAR",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "doodledo MOTION",
+			"logo": "data/pictures/companies/Doodledo_Motion_Logo_0.png",
+			"info": "doodledo MOTION is a production company specialising in animation and motion graphics as well as filming editing and graphic design. They produce work for broadcast and corporate working with television production companies, creative agencies, events companies as well as directly with corporate clients.",
+			"media_content" : "<img src=data/pictures/companies/Doodledo_Motion.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "Digital Next",
+			"logo": "data/pictures/companies/Digital_Nextlogo.png",
+			"info": "Digital Next has been born out of a group of experienced Internet marketing innovators with over twenty years worth of combined experience. Digital Next has developed from a multitude of successful in house projects and a global and fast growing search engine optimisation company called SEONext",
+			"media_content" : "<img src=data/pictures/companies/Digital_Next.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "AdvertisingAndDigitalProduction",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "Touchsoft",
+			"logo": "data/pictures/companies/Touchsoft_0.png",
+			"info": "Touchsoft provide Android, iOS, Windows Phone & Web applications development services creating world-class software of the highest quality with an excellent attention to detail. Touchsoft has recently worked with Manchester NHS to design and develop 'My Support Plan', an iPad application to help patients apply for and manage their Personal Health Budget.",
+			"media_content" : "<img src=data/pictures/companies/Touchsoft.png>",
+			"lat":  "53.502040334488" ,
+			"lng": "-2.192851165727782",
+			"sector": "SoftwareAndData",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "Aequitas Forensics",
+			"logo": "data/pictures/companies/Aequitas_Forensics_0.png",
+			"info": "Aequitas Forensics Ltd is an Expert Witness company offering services in the areas of Digital media, Cellsite Analysis, body fluids, DNA profiling and Firearm examinations. Our experts have in excess of 35 years of experience dealing with a vast range of case types which have included murder & terrorism to complex fraud and drugs related investigations.",
+			"media_content" : "<img src=data/pictures/companies/Aequitas_Forenscics.png>",
+			"lat":  "53.502040334488" ,
+			"lng": "-2.192851165727782",
+			"sector": "SoftwareAndData",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "JD Sports",
+			"logo": "data/pictures/companies/jd-sports-logo-200.jpg",
+			"info": "JD Sports Fashion plc, more commonly known as just JD, is a sports-fashion retail company based in Bury, Greater Manchester, with shops throughout the United Kingdom and with four exclusive stores in Ireland. JD Sports have located their multi channel content and production team at The Sharp Project. The Sharp Project is used as a permanent base for the production of their digital and marketing content across the group.",
+			"media_content" : "<img src=data/pictures/companies/JD_Sport.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "ECommerce",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "AYTU Games",
+			"logo": "data/pictures/companies/aytU_Games_0_(1).png",
+			"info": "AYTU Games are innovators of social, prize fan trivia contests for the web, Android and iOS. AYTU Games was formed in 2013 by a group of electronic games industry specialists who have worked in the UK Skill With Prize (SWP) sector for over 20 years. With billions of questions asked and thousands of players playing our titles live around the world, only the ultimate players can win our fabulous multi thousand pound prizes.",
+			"media_content" : "<img src=data/pictures/companies/AYTU_Games_0.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "GamesAndAR",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "Degree 53",
+			"logo": "data/pictures/companies/Degree_53logo_0.png",
+			"info": "Degree 53 are an independently owned full service digital design and technology agency based in Manchester specialising in building high volume transactional mobile web and native applications. Whether it's mobile, web or beyond, they build the right solution that connects each clients' businesses with their customers. Their services include: mobile design, responsive web, software integration, UI & UX, project management and quality assurance.",
+			"media_content" : "<img src=data/pictures/companies/Degree_53.png>",
+			"lat":  "53.50136178766985" ,
+			"lng": "-2.195772522167797",
+			"sector": "GamesAndAR",
+			"place": "TheSharpProject"
+		},
+		{
+			"title": "11 Out of 10",
+			"logo": "data/pictures/companies/11_out_of_10.png",
+			"info": "11 Out of 10 Digital are a multi award winning Manchester based digital agency that provide highly professional business websites, highly profitable on-line shops and award winning bespoke web based business solutions that work. Over the years, the agency has gained recognition from government bodies for its high standards, reliability and industry knowledge. 11/10 are accredited consultants to Manufacturing Advisory Service(MAS) , Manchester Chamber of Commerce, and other government grant managing bodies.",
+			"media_content" : "<img src=data/pictures/companies/11_out_of_10_.png>",
+			"lat":  "53.49297640510716" ,
+			"lng": "-2.274396679776825",
+			"sector": "AdvertisingAndDigitalProduction",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Godel Technologies Europe",
+			"logo": "data/pictures/companies/Godal_Technologies_Europe_0.png",
+			"info": "Godel is a leading provider of high quality software development services for businesses in the UK, Europe and North America, specialising in enterprise application development, system integration and business automation tools, with industry specific expertise in scientific, telecoms (VOIP), financial, process automation and media sectors.",
+			"media_content" : "<img src=data/pictures/companies/Godel_Tec.png>",
+			"lat":  "53.48033854335201" ,
+			"lng": "-2.238670367061215",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "ANS Group",
+			"logo": "data/pictures/companies/ans_group__0.png",
+			"info": "Originally founded in Manchester, ANS is an award-winning Managed Services and Hybrid Cloud expert. The company has experienced 80% year on year growth since 2009 and currently turns over ?47m. ANS are currently the NetApp EMEA Service Partner of the Year and NetApp UK FlexPod Partner of the Year and hold the coveted Cisco Master Cloud Builder Accreditation, only the 2nd Cisco partner in the UK to achieve the specialisation. ANS also run their own Cloud Apprentice Academy.",
+			"media_content" : "<img src=data/pictures/companies/Ans_Group.png>",
+			"lat":  "53.46153917012097" ,
+			"lng": "-2.238365039659453",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Bio-Analytical Technologies",
+			"logo": "data/pictures/companies/Bio_Anyalytical_Tech_0.png",
+			"info": "Bio-Analytical Technologies (UK) Ltd is a subsidiary of Bio-Analytical Technologies (India) offering knowledge based software solutions focused on life sciences and healthcare applications. The powerful combination of research, strong technical and domain expertise, software skills and rich experience, helps them to evolve products, solutions and applications that enrich quality of life.",
+			"media_content" : "<img src=data/pictures/companies/Bio_Analytical.png>",
+			"lat":  "53.4630220757369" ,
+			"lng": "-2.235820370152434",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Metronet UK",
+			"logo": "data/pictures/companies/Metronet_UK_0.png",
+			"info": "Metronet UK Ltd is a metropolitan area network providing Secure Radio IP transit in the local loop for the Manchester coverage area. The network has 13 secure radio points of presence (POP) sites providing coverage across the region. Using this network you can deliver a cost effective IP connection to virtually any building inside the M60 ring, all within 5 working days.",
+			"media_content" : "<img src=data/pictures/companies/Metronet.png>",
+			"lat":  "53.4643899550254" ,
+			"lng": "-2.246035413431673",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "CACI",
+			"logo": "data/pictures/companies/CACI.png",
+			"info": "CACI is a leading supplier of systems integration, software application solutions and consultancy services to the public sector and is a Government Procurement Services supplier. CACI Ltd is a wholly owned subsidiary of CACI International Inc., a publicly listed company on the NYSE with annual revenue in excess of US $3.6bn and employing approx 14,000 people worldwide.",
+			"media_content" : "<img src=data/pictures/companies/CACI1.png>",
+			"lat":  "53.46159207007108" ,
+			"lng": "-2.238491414518461",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Exleaz",
+			"logo": "data/pictures/companies/Exleaz_1.png",
+			"info": "Exleaz is an innovative Customer-centric Product Development and IT solutions provider that provide cloud Customer Relationship Management (CRM), Mobile/Web solutions, Business Intelligence and Hospital Management System (MediEaz) solutions with corporate office in UK and a Centre of excellence, a wholly-owned subsidiary, in INDIA. Exleaz offers a wide range of services including Consulting and Application Management from Small to large organisations.",
+			"media_content" : "<img src=data/pictures/companies/Exleaz.png>",
+			"lat":  "53.49184520125645" ,
+			"lng": "-2.275688658149412",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Cubic Motion Ltd",
+			"logo": "data/pictures/companies/Cubic_Motionlogo_0.png",
+			"info": "Cubic Motion is a studio that specialises in the production of facial animation services for video games, film and TV. With years of experience in this area combined with its own proprietary technology, Cubic Motion is confident that it offers the best combination of quality and speed in the industry.",
+			"media_content" : "<img src=data/pictures/companies/Cubic_motion.png>",
+			"lat":  "53.46303346451332" ,
+			"lng": "-2.236134189560963",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Protime",
+			"logo": "data/pictures/companies/Protime_1.png",
+			"info": "Protime is market leader in Workforce Management solutions. Protime has more than 4,000 installations across Europe with many of them Blue Chip Organisations and is a Microsoft Certified Gold Partner. In 2010, Protime received a prestigious Dun & Bradstreet No. 1 ranking award. Today the company employs 100 staff with offices in Manchester, Rotterdam, Paris, Antwerp and Namur.",
+			"media_content" : "<img src=data/pictures/companies/Protime.png>",
+			"lat":  "53.46309318498867" ,
+			"lng": "-2.238387524535495",
+			"sector": "SoftwareAndData",
+			"place": "TheCorridor"
+		},
+		{
+			"title": "Nifty Drives",
+			"logo": "data/pictures/companies/Nifty_Drives_1.png",
+			"info": "A Manchester based tech start up who have created an adapter for micro SD cards that fits inside a MacBook. The founders put the concept on KickStarter in July 2012, hoping to raise $11,000. They shattered their target in 10 hours and ended up with a total of $384,319 from nearly 10,000 backers, among them Apple co-founder Steve Wozniak.",
+			"media_content" : "<img src=data/pictures/companies/Nifty_Drives.png>",
+			"lat":  "53.48161824964834" ,
+			"lng": "-2.220526618482177",
+			"sector": "Hardware",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "Couchbase",
+			"logo": "data/pictures/companies/Couchbaselogo_0.png",
+			"info": "Couchbase provides the world's most complete, most scalable and best performing NoSQL database. Headquartered in Mountain View, California, Couchbase is the company behind the Couchbase open source project, a vibrant community of developers and users of Couchbase document-oriented database technology.",
+			"media_content" : "<img src=data/pictures/companies/Couchbase.png>",
+			"lat":  "53.48245652352171" ,
+			"lng": "-2.234446499467916",
+			"sector": "SoftwareAndData",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "Cyclr",
+			"logo": "data/pictures/companies/Cycir_0.png",
+			"info": "Cyclr is an online magazine, community, and shop with an urban focus. They bring cyclists the best in lifestyle, innovation, and design from around the world. Companies wishing to promote and sell their products can launch an online and mobile-ready presence to engage a new audience, stay relevant and acquire new customers. When a customer is ready to make a purchase, Cycler links them to that company’s checkout cart.",
+			"media_content" : "<img src=data/pictures/companies/Cyclr.png>",
+			"lat":  "53.47896618223454" ,
+			"lng": "-2.230144277878855",
+			"sector": "ECommerce",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "Sharemystorage.com",
+			"logo": "data/pictures/companies/Share_my_Storage.png",
+			"info": "Sharemystorage.com is a social marketplace that brings together two different groups of people; those who have spare space and those who need spare space for storage. Everyday people and 'best practice' self-storage firms offering self-storage on sharemystorage.com can help customers reduce storage costs by up to 70%. SmS uses a bespoke review system that enables people to gauge the credibility of a potential storage user or provider before making any commitments. This system helps the community to moderate and reward itself.",
+			"media_content" : "<img src=data/pictures/companies/sharemystorage.png>",
+			"lat":  "53.47462460766491" ,
+			"lng": "-2.211958796136782",
+			"sector": "ECommerce",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "BaseClarity",
+			"logo": "data/pictures/companies/Base_Clarity_0.png",
+			"info": "BaseClarity solution covers the entire suite of Oracle technology products and Oracle Applications (EBS) to gather the data and then join the sources together turning raw data into valuable information for decision making. Their team is comprised of consultants and domain experts who have worked as consultants, architects and senior managers in large consulting firms, system integrators and Oracle Corporation.",
+			"media_content" : "<img src=data/pictures/companies/Baseclarity.png>",
+			"lat":  "53.48024287194365" ,
+			"lng": "-2.232065179650261",
+			"sector": "SoftwareAndData",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "Moment.US",
+			"logo": "data/pictures/companies/Moment_US_1.png",
+			"info": "A music app designed around your environment, emotions and experiences. The app establishes your location, your mood, the weather, and a number of other factors, and picks songs to suit the occasion from 25 million tracks. As it gets it wrong (you skip the song) or right (you mark the song as a favourite), it 'learns' your listening behaviour.",
+			"media_content" : "<img src=data/pictures/companies/Moment_US.png>",
+			"lat":  "53.48204737358471" ,
+			"lng": "-2.234225855699839",
+			"sector": "ECommerce",
+			"place": "TheNorthernQuarter"
+		},
+		{
+			"title": "Dentsu Aegis (Carat)",
+			"logo": "data/pictures/companies/Carat_Logo_0.png",
+			"info": "Dentsu Aegis Network Ltd. is a multinational media and digital marketing communications company and a wholly owned subsidiary of Dentsu. They have three main client services brands, Carat and Vizeum (both Media Buying agencies) and iProspect (search advertising), each with their own client set and all with a presence in Manchester. In Manchester, they also have Poster Scope (Outdoor Media buyers).",
+			"media_content" : "<img src=data/pictures/companies/Carat.png>",
+			"lat":  "53.47659780178473" ,
+			"lng": "-2.240983647494224",
+			"sector": "AdvertisingAndDigitalProduction",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Weber Shandwick",
+			"logo": "data/pictures/companies/Weber_shandwick_Logo_0.png",
+			"info": "Weber Shandwick Manchester is a creative communications agency and part of the global Weber Shandwick network. With dedicated teams for both corporate and consumer PR, the team at Weber Shandwick Manchester has experience in sectors ranging from retail, tourism and hospitality to financial and professional services, logistics, public sector, healthcare and education. From media relations, crisis communications to digital and creative content, Weber Shandwick is a fully integrated agency.",
+			"media_content" : "<img src=data/pictures/companies/Weber_Shandwick.png>",
+			"lat":  "53.47321806929826" ,
+			"lng": "-2.250401730837658",
+			"sector": "AdvertisingAndDigitalProduction",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Laterooms.com",
+			"logo": "data/pictures/companies/Late_Rooms_Logo_0.png",
+			"info": "LateRooms.com was born in Salford, Greater Manchester in 1999, starting life as an 'on the day for the day' booking site for unsold rooms. By 2007 LateRooms had joined the world's leading leisure travel group, TUI Travel PLC. Today the company employs over 600 people in Manchester and offers over 65,000 properties worldwide with more UK hotels than anybody else",
+			"media_content" : "<img src=data/pictures/companies/Late_Rooms.png>",
+			"lat":  "53.48944177128555" ,
+			"lng": "-2.24124976623108",
+			"sector": "ECommerce",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Bauer Media",
+			"logo": "data/pictures/companies/Bauer_logo_0.png",
+			"info": "Bauer Media is a division of the Bauer Media Group; Europe’s largest privately owned publishing Group. Manchester is home to Bauer Place, the company's geography-based portfolio. Stations in the Bauer Place portfolio champion local communities and strive to deliver more relevant local programming and to unite listeners in the places they live. Dominating the premier cities and towns across the UK, Bauer Place Stations include London's Magic 105.4 and Manchester's Key 103 amongst many others.",
+			"media_content" : "<img src=data/pictures/companies/Bauer_Media.png>",
+			"lat":  "53.47319063000039" ,
+			"lng": "-2.255894508449856",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "CityCenter"
+		},
+		{
+			"title": "NCC Group",
+			"logo": "data/pictures/companies/NCC_Group_Logo2.png",
+			"info": "NCC Group is a global information assurance specialist providing organisations worldwide with expert escrow, verification, security testing, website performance, software testing and domain services. NCC Group started in Manchester and maintains global headquarters in the city. NCC Group has 18 locations across the UK, Europe, North America and Australia with the majority of their staff based in the Manchester site.",
+			"media_content" : "<img src=data/pictures/companies/NCC_group.png>",
+			"lat":  "53.47204550135361" ,
+			"lng": "-2.238283764431346",
+			"sector": "SoftwareAndData",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Google",
+			"logo": "data/pictures/companies/Google_Logo_0.png",
+			"info": "Google runs the world's largest search engine and specialises in Internet-related services and products. These include online advertising technologies, search, cloud computing, and software. As ad-words are a large proportion of Google's profit, their Manchester sales office is integral to their continued success in the north of England as it is from here they target the entire North of England. Google have just celebrated 8 years in Manchester.",
+			"media_content" : "<img src=data/pictures/companies/Google.png>",
+			"lat":  "53.47701598828621" ,
+			"lng": "-2.243813544979679",
+			"sector": "AdvertisingAndDigitalProduction",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Thoughtworks",
+			"logo": "data/pictures/companies/Thoughtworks_Logo_0.png",
+			"info": "Thoughtworks is a global software company focused on software design and delivery. After initially plans to have 30 people based in Manchester, Thoughtworks now have closer to 100 and their growth in the city has been phenomenally successful. Thoughtworks.com is based out of the Manchester office and they have recently moved their HR team out of London to Manchester.",
+			"media_content" : "<img src=data/pictures/companies/Thoughtworks.png>",
+			"lat":  "53.48028607797917" ,
+			"lng": "-2.238423650187364",
+			"sector": "SoftwareAndData",
+			"place": "CityCenter"
+		},
+		{
+			"title": "Factory TM",
+			"info": "Factory Transmedia design and collaborate on the most engaging entertainment projects for exploitation across all media. Factory TM is uniquely placed to develop and produce projects from the initial germ of an idea through to transmedia deployment. With their ability to work across all genres of animation coupled with their collaborative approach to development, factory can provide an exceptional range of creative led services to brand holders.",
+			"logo": "data/pictures/companies/Factory_Transmedia_logo_0.png",
+			"media_content" : "<img src=data/pictures/companies/Factory_Transmedia.png>",
+			"lat":  "53.40995558570999" ,
+			"lng": "-2.157976103618745",
+			"sector": "BroadcastAndMediaProduction",
+			"place": "SouthManchester"
+		},
+		{
+			"title": "EMC",
+			"info": "EMC is a global leader in enabling businesses and service providers to transform their operations and deliver information technology as a service (ITaaS). EMC's Manchester office hosts a variety of roles including sales, marketing and technology consultants. EMC have recently confirmed their commitment to Manchester by relocating to a new, bigger office in the city.",
+			"logo": "data/pictures/companies/EMCLogo_0.png",
+			"media_content" : "<img src=data/pictures/companies/EMC.png>",
+			"lat":  "53.39882963922417" ,
+			"lng": "-2.267550518323531",
+			"sector": "ECommerce",
+			"place": "SouthManchester"
+		},
+		{
+			"title": "Microsoft",
+			"info": "The world's largest software maker, Microsoft is a $78 billion company with over 125,000 employees worldwide. Microsoft's Manchester office has 60 employees in both sales and technical support roles. Microsoft work closely with the city of Manchester and have chosen Manchester as the only UK city to be part of their City Next Programme which uses cloud technology, mobile devices, data analytics, and social networks to help cities become more prosperous.",
+			"logo": "data/pictures/companies/Microsoft_Logo_0.png",
+			"media_content" : "<img src=data/pictures/companies/Microsoft.png>",
+			"lat":  "53.36731228851022" ,
+			"lng": "-2.265185806093152",
+			"sector": "SoftwareAndData",
+			"place": "SouthManchester"
+		},
+		{
+			"title": "TBWA/Manchester",
+			"info": "TBWA/Manchester is a group of multichannel communications specialists working with local, national and international brands. They develop creative ways of shaping consumer behaviour to suit a business need. Their goal is to deliver greater success to each of their clients. As a part of TBWA Worldwide, the Manchester branch is related to a 77 country network, with 258 offices and 12,000 employees. All of this experience is at your fingertips through TBWA/Manchester.",
+			"logo": "data/pictures/companies/TBWA_logo_0.png",
+			"media_content" : "<img src=data/pictures/companies/TBWT.png>",
+			"lat":  "53.41293018233487" ,
+			"lng": "-2.230352768056378",
+			"sector": "IT",
+			"place": "SouthManchester"
+		},
+		{
+			"title": "Cisco",
+			"info": "Cisco is a world leader in networking for the Internet. Cisco Systems Ltd. maintains its European sales from Manchester covering the whole of Northern England and Europe. Cisco operates 2 National Virtual Incubators in Manchester as well as working closely with the Universities, running a Cisco Networking Academy at the University of Salford.",
+			"logo": "data/pictures/companies/Cisco_Logo_0.png",
+			"media_content" : "<img src=data/pictures/companies/Cisco.png>",
+			"lat":  "53.40870137391023" ,
+			"lng": "-2.228006553226059",
+			"sector": "SoftwareAndData",
+			"place": "SouthManchester"
+		},
+		{
+			"title": "TalkTalk Technology",
+			"info": "TalkTalk Technology is the network operator and wholesale arm of the TalkTalk Group, the UK’s leading value for money provider of phone, broadband, mobile and television services to consumers and businesses. TalkTalk has one of the most advanced and largest Next Generation Networks in the UK–reaching 95% of households, The network engineering centre in Manchester employs over 700 staff, mostly in engineering and technical roles supporting the company's 4 million customers.",
+			"logo": "data/pictures/companies/Talktalk_Logo_0.png",
+			"media_content" : "<img src=data/pictures/companies/TalkImage.png>",
+			"lat":  "53.42842094680202" ,
+			"lng": "-2.432580046612657",
+			"sector": "SoftwareAndData",
+			"place": "SouthManchester"
+		}
+
+
+	]
+}

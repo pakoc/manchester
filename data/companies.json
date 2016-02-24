@@ -1,0 +1,225 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"items": [{
+			"title": "EON Reality",
+			"logo": "data/pictures/companies/eon/eon_logo.png",
+			"focus": [
+				"Alternative Reality",
+				"e-Learning",
+				"Training"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<iframe width=\"520\" height=\"293\" src=\"https://www.youtube.com/embed/lxZhHiV_SlA\" frameborder=\"0\" allowfullscreen></iframe>",
+			"size": "0-50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir1.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Previous: Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "IBM",
+			"logo": "data/pictures/companies/ibm/ibm.png",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video2.jpg>",
+			"size": "1000",
+			"age": "10+",
+			"person": {
+				"name": "Martyn Spink",
+				"position": "Lab Manager",
+				"photo": "data/pictures/companies/dir2.jpg",
+				"specializations": [
+					"Software Development",
+					"Software Engineering",
+					"Linux"
+				],
+				"previous": "Previous: Director of Engineering, Transitive Limited"
+			}
+		},
+		{
+			"title": "Boohoo.com",
+			"logo": "data/pictures/companies/logo3.jpg",
+			"focus": [
+				"e-commerce"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video3.jpg>",
+			"size": "600",
+			"age": "8",
+			"person": {
+				"name": "Eleanor Wheeler",
+				"position": "Senior Online Marketing Executive",
+				"photo": "data/pictures/companies/dir3.jpg",
+				"specializations": [
+					"Online Advertising",
+					"Digital Media",
+					"Advertising"
+				],
+				"previous": "Senior Digital Media Executive, Universal McCann"
+			}
+		},
+		{
+			"title": "Bright Future Software",
+			"logo": "data/pictures/companies/logo4.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video4.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir4.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "UKFast",
+			"logo": "data/pictures/companies/logo5.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video5.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir5.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "MacKinnon & Saunders",
+			"logo": "data/pictures/companies/logo6.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video6.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir6.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "Gosgrove Hall Fitzpatrick",
+			"logo": "data/pictures/companies/logo7.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video7.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir7.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "Code Computerlove",
+			"logo": "data/pictures/companies/logo8.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video8.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir8.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		},
+		{
+			"title": "KMS (Digital Health)",
+			"logo": "data/pictures/companies/logo9.jpg",
+			"focus": [
+				"Business Services",
+				"IT Services",
+				"Outsourcing Services"
+			],
+			"info": "EON Reality, the world's leading interactive 3D software provide for....",
+			"media_content" : "<img src=data/pictures/companies/video9.jpg>",
+			"size": "50",
+			"age": "3",
+			"person": {
+				"name": "Ken Swain",
+				"position": "MD, UK",
+				"photo": "data/pictures/companies/dir9.jpg",
+				"specializations": [
+					"3D",
+					"3d Visualisation",
+					"Digital Media"
+				],
+				"previous": "Design Academy Ltd - Kognitiv"
+			}
+		}
+
+	]
+}

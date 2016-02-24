@@ -1,0 +1,28 @@
+<div class="wrapper">
+	 
+	 <style>	 
+		 
+	 </style>
+		<div class="col-xs-4">
+			<H2>NETWORKS</H2>
+			<img src = "{{selected.img1}}">
+			<div ng-repeat="item in data.items" ng-click="setSelection(item)"> {{item.title}}</div>
+			<img src = "">
+		</div>
+		<div class="col-xs-8">
+			<H2>{{selected.title}}:</H2>
+			{{selected.info}}
+			<H2>THOUGHT LEADERS:</H2>
+			<div class="col-xs-12 block" >
+				<div class="carousel_horizontal" style="height:218 px;">
+					<div class="carousel-items" style="width : {{data.items.length * 100}}%;  margin-left : {{currentItem * -100}}%">
+						
+						<div class="carousel-item" style="width : {{100 / data.items.length}}%;" ng-repeat="item in data.items"><div class="col-xs-6"><div class="col-xs-6">{{item.persons[0].name}}<br>{{item.persons[0].job_title}}<br>{{item.persons[0].skills}}</div> <div class="col-xs-6"><img src="{{item.persons[0].photo}}"></div></div><div class="col-xs-6"><div class="col-xs-6">{{item.persons[1].name}}<br>{{item.persons[1].job_title}}<br>{{item.persons[1].skills}}</div> <div class="col-xs-6"><img src="{{item.persons[1].photo}}"></div></div></div>
+						<div class="col-xs-6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 
+</div><!--end wrapper-->

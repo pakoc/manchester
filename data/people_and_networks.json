@@ -1,0 +1,83 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"items": [
+		{
+			"title": "Manchester Digital", 
+			"img1": "data/pictures/people/Manchester_Digital_Talent_Day_1.jpg", 
+			"info": "Manchester Digital is the independent trade association for digital business in the North West of England. It brings together organisations and individuals from all parts of the industry - from creative to technical, from software to media, from telecommunications to marketing.<br>Membership benefits:<br>• Regular seminars, learning opportunities and networking events such as the<br>flagship Big Chip<br>Awards and the region’s only digital skills festival<br>• Signposting and access to business support and investment information.<br>• Listing in MD’s searchable online directory<br>• Post news, share press releases and advertise jobs and business opportunities on website<br>• 20% discount on selected advanced fares to London on Virgin Trains<br>• Access to hot-desk space at The Landing at MCUK for as low as ?25/quarter", 
+			"persons":[
+			{
+				"name": "Sue Woodward",
+				"job_title": "The Sharp & Space Projects",
+				"skills" : "Broadcast Growth Funding Technology",
+				"photo": "data/pictures/people/Sue_Woodward-Sharp_0.png"
+			},
+			{
+				"name": "Carol Goble",
+				"job_title": "University of Manchester",
+				"skills" : "Semantic Web Ontologies Bioinformatics",
+				"photo": "data/pictures/people/Carole_Goble.png"
+			}]
+		},
+		{
+			"title": "Pro-manchester", 
+			"img1": "data/pictures/people/DeskRings-NEWS.jpg", 
+			"info": "Pro•manchester is the largest business development organisation in the North West representing financial and professional service and the wider business community. They also have a Creative pro•manchester committee aimed at connecting the local financial and professional sector with the digital, creative and media sector in the city, explaining how both sides could learn a lot about each other and develop a range of new business opportunities.<br> Membership benefits:<br>• Be part of a trusted network of over 280 companies and 5,000 individuals<br>• Access to business focused events<br>• Up to date research and information about key sectors<br>• Economic Insight and Analysis<br>• Help raising the profiles of your company and employees", 
+			"persons":[
+			{
+				"name": "Piers Linney",
+				"job_title": "Outsourcery",
+				"skills" : "Cloud Computing Startups SaaS",
+				"photo": "data/pictures/people/Piers_Linney-Outsourcery.png"
+			},
+			{
+				"name": "Jon Corner",
+				"job_title": "The Landing",
+				"skills" : "Video Production Social Media Copywritng",
+				"photo": "data/pictures/people/Jon_Corner-The_Landing.png"
+			}]
+		},
+		{
+			"title": "Manchester Publicity Association (MPA)", 
+			"img1": "data/pictures/people/MPA_0.jpg", 
+			"info": "The MPA is the largest publicity association in Europe, and is dedicated to bringing people who work in the creative industries in the Manchester closer together. The not-for-profit organisation also raises funds for the National Agency Benevolent Society (NABS), which helps those in need from the creative industries.<br> Membership benefits:<br>• Access to a range free members only events<br>• Social and networking events throughout the year with discounted prices for MPA Members<br>• Website space to promote business and share news, wins, jobs, etc.<br>• GMBW weekly column for MPA members to write an opinion piece<br>• Free promotion of members own events<br>• Added value discount offers with Partners", 
+			"persons":[
+			{
+				"name": "Ian Kennedy",
+				"job_title": "Cisco",
+				"skills" : "Cloud computing Unified Comms Leadership",
+				"photo": "data/pictures/people/Ian_Kennedy-Cisco.png"
+			},
+			{
+				"name": "Simon Hall",
+				"job_title": "Cosgrove Hall Fitzpatrick",
+				"skills" : "Post Production Commercials Animation",
+				"photo": "data/pictures/people/Simon_Hall.png"
+			}]
+		},
+		{
+			"title": "Greater Manchester Chamber of Commerce", 
+			"img1": "data/pictures/people/GM_Chamber_of_Com.jpg", 
+			"info": "The GM Chamber is the largest Chamber of Commerce in the UK with over 5,000 members. They provide first-class business support to companies of all shapes and sizes through a range of sector-based membership services and networking opportunities, specifically tailored to meet the needs of each business.<br> Membership benefits:<br>• Over 40 Action for Business networking forums per year plus various sector-specific events<br>• Regus preferred Card (12 months) - 15 visits to over 1700 Business Lounges worldwide<br>• Primary Health Plan – Offer employees healthcare from as little as ?1.10 per week<br>• Free Legal Expenses Insurance (up to ?65,000) and legal advice helpline<br>• Expert policy, HR and employment law help and support<br>• International Trade Support – Export docs, Export Britain lead website, trade events<br>• Chamber Plus - Using leading suppliers to negotiate utility and service costs for members<br>• Funding Portal - Search for financial backing", 
+			"persons":[
+			{
+				"name": "Mike Peris",
+				"job_title": "Mc2 (and MPA board member)",
+				"skills" : "Marketing PR Financial PR",
+				"photo": "data/pictures/people/Mike_Peris-MC2.png"
+			},
+			{
+				"name": "Tim Langley",
+				"job_title": "CEO CANDDi",
+				"skills" : "",
+				"photo": "data/pictures/people/Tim Langley.jpg"
+			}]
+		}
+	]
+}

@@ -491,7 +491,9 @@ app.directive('doubleDonuteChart', function()
  				labelDirection: 'explode',
  				labelOffset: 60,
  				chartPadding: 160,
- 				showLabel : true
+ 				showLabel : true,
+ 				responsive : false,
+ 				textAnchor: 'middle'
 
 			},
 			subChartOptions = {
@@ -502,7 +504,8 @@ app.directive('doubleDonuteChart', function()
  				labelDirection: 'explode',
  				labelOffset: 30,
  				chartPadding: 150,
- 				showLabel : true
+ 				showLabel : true,
+ 				responsive : false
 			},
 			mainChart = null,
 			subChart = null;
@@ -515,7 +518,7 @@ app.directive('doubleDonuteChart', function()
 					scope.mainChartData.forEach(function(item)
 					{
 						series.push(item.num);
-						labels.push(item.title + '' );
+						labels.push(item.title + ' >' );
 					});
 				}());
 				   
@@ -548,13 +551,46 @@ app.directive('doubleDonuteChart', function()
 	 						mainChart.update(mainChart.data, mainChart.options);	
 	 					}
 
-	 					 
+	 					//x_0 = 
 	 				}
 	 				else
 	 				{
 	 					data.element._node.classList.add('animated');
  						data.element._node.classList.add('fadeIn');
  						data.element._node.classList.add('animation-delay-'+ data.index);
+ 						//console.log(data.index)
+ 						var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+ 						tspan.innerHTML = scope.mainChartData[data.index].num + ' companies';
+ 						tspan.setAttribute('dy', 16);
+ 						tspan.setAttribute('dx', -data.element._node.offsetWidth);
+ 						data.element._node.appendChild(tspan)
+ 						var x_0 = mainChart.container.children[0].offsetWidth/2;
+ 						var y_0 = mainChart.container.children[0].offsetHeight/2;
+ 						// console.log(data.element._node.offsetTop, x_0, y_0 );
+ 						var kx = 1;
+ 						var ky = 1;
+ 						var stroke = 'red';
+ 						if (data.element._node.offsetLeft - x_0 < 0 ) { kx = -1 ; }
+ 						if (data.element._node.offsetLeft - y_0 < 0 ) { ky = -1 ; }
+ 						var ang = (Math.atan((data.element._node.offsetTop - y_0)/(data.element._node.offsetLeft - x_0)));
+ 						var x1 = x_0+(kx)*Math.cos(ang)*110;
+ 						var y1 = y_0+(ky)*Math.sin(ang)*110;
+ 						var x2 = x_0+(kx)*Math.cos(ang)*140;
+ 						var y2 = y_0+(ky)*Math.sin(ang)*140;
+ 						
+ 						
+ 						//console.log(x_0+Math.cos(ang)*120, y_0+Math.sin(ang)*100, scope.mainChartData[data.index]);
+ 						//console.log(x_0+Math.cos(ang)*200, y_0+Math.sin(ang)*200, scope.mainChartData[data.index]);
+//<polyline points="0,0 50,0 150,100 250,100 300,150" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
+ 						var line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+ 						//if (kx>0)
+ 						{
+ 							line.setAttribute('points', x1 + ',' + y1 + ',' + x2 + ',' + y2);
+ 						line.setAttribute('stroke-width', '1');
+ 						line.setAttribute('stroke', stroke);
+ 						line.setAttribute('title', scope.mainChartData[data.index].num)
+ 						data.element._node.parentNode.appendChild(line);
+ 						}
 	 				}
 	 				 
 
@@ -564,7 +600,7 @@ app.directive('doubleDonuteChart', function()
 	 			function clearSubChart()
 	 			{
 	 				 document.querySelector( '#'+subChartId+' svg').remove();
-	 				//document.getElementById(subChartId).clear();
+	 				 subChart.detach();
 	 			}
 	 			function drawSubChart(val)
 	 			{

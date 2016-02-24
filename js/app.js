@@ -432,8 +432,26 @@ app.directive('myMap', function() {
     };
 });
 
-app.controller('OverviewPageController',function($scope){
+app.controller('OverviewPageController',function($scope, $http, $location){
+	$scope.mainChartData = {};
+	$scope.isSubChartExist = false;
+	var initChart;
+	$scope.callBack = function(f_initChart)
+	{
+		initChart = f_initChart;
+	}
+	$http.get('data/'+$location.path()+'.json',{cache:false}).success(function(data){
+		console.log(data.items);
+		if (data.items){
+			init(data);
+		}
+	});
 
+	function init(data)
+	{
+		$scope.mainChartData = data.items;
+		initChart();
+	}
 });
 
 app.directive('barChart',function(){
@@ -459,6 +477,263 @@ app.directive('barChart',function(){
 		link     : link
 	}
 });
+
+
+app.directive('doubleDonuteChart', function()
+{
+	var link = function(scope,element,attrs)
+		{
+			var mainChartOptions = {
+				donut : true,
+ 				donutWidth : 35,
+ 				height : 530,
+ 				width : 530,
+ 				labelDirection: 'explode',
+ 				labelOffset: 60,
+ 				chartPadding: 160,
+ 				showLabel : true
+
+			},
+			subChartOptions = {
+				donut : true,
+ 				donutWidth : 30,
+ 				height : 570,
+ 				width : 570,
+ 				labelDirection: 'explode',
+ 				labelOffset: 30,
+ 				chartPadding: 150,
+ 				showLabel : true
+			},
+			mainChart = null,
+			subChart = null;
+			var initChart = function()
+			{
+				 
+				var series =[], labels = []; 
+				(function()
+				{
+					scope.mainChartData.forEach(function(item)
+					{
+						series.push(item.num);
+						labels.push(item.title + '' );
+					});
+				}());
+				   
+				var mainChartId = element[0].querySelector('.main-chart').id = getId();
+ 				var subChartId = element[0].querySelector('.sub-chart').id = getId();
+ 				mainChart =  new Chartist.Pie('#'+mainChartId,{
+	 				series : series,
+	 				labels : labels,
+	 			},
+	 			mainChartOptions);
+  				var index = 0;
+	 			mainChart.on('draw',function(data){
+	 				if (data.type === 'slice')
+	 				{
+	 					data.element._node.value = data.value;
+	 					data.element._node.onclick = function(e)
+	 					{
+	 						if (scope.isSubChartExist)
+	 						{
+	 							mainChart.options.showLabel = true;
+	 							clearSubChart();
+	 							scope.isSubChartExist = false;
+	 						}
+	 						else
+	 						{
+	 							mainChart.options.showLabel = false;
+		 						drawSubChart(e.target.value);
+		 						scope.isSubChartExist = true;
+	 						}
+	 						mainChart.update(mainChart.data, mainChart.options);	
+	 					}
+
+	 					 
+	 				}
+	 				else
+	 				{
+	 					data.element._node.classList.add('animated');
+ 						data.element._node.classList.add('fadeIn');
+ 						data.element._node.classList.add('animation-delay-'+ data.index);
+	 				}
+	 				 
+
+	 				
+
+	 			});
+	 			function clearSubChart()
+	 			{
+	 				 document.querySelector( '#'+subChartId+' svg').remove();
+	 				//document.getElementById(subChartId).clear();
+	 			}
+	 			function drawSubChart(val)
+	 			{
+	 				 
+	 				var subSeries = [],
+	 					subLabels = [];
+	 				var item  = scope.mainChartData.filter(function(item)
+	 				{
+	 					return item.num == val;
+	 				});
+
+	 				(function()
+					{
+						item[0].items.forEach(function(item)
+						{
+							subSeries.push(item.num);
+							subLabels.push(item.title + '('+item.percent+'%)');
+						});
+					}());
+	 				subChart = new Chartist.Pie('#'+subChartId,{
+		 				series : subSeries,
+		 				labels : subLabels
+		 			},
+		 			subChartOptions)
+					 				.on('draw', function(data) {
+
+											  if(data.type === 'slice') {
+
+											    // Get the total path length in order to use for dash array animation
+											    var pathLength = data.element._node.getTotalLength();
+
+											    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+											    data.element.attr({
+											      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+											    });
+
+											    // Create animation definition while also assigning an ID to the animation for later sync usage
+											    var animationDefinition = {
+											      'stroke-dashoffset': {
+											        id: 'anim' + data.index,
+											        dur: 500,
+											        from: -pathLength + 'px',
+											        to:  '0px',
+											        easing: Chartist.Svg.Easing.easeInSine,
+											        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+											        fill: 'freeze'
+											      }
+											    };
+
+											    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+											    if(data.index !== 0) {
+											      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+											    }
+
+											    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+											    data.element.attr({
+											      'stroke-dashoffset': -pathLength + 'px'
+											    });
+
+											    // We can't use guided mode as the animations need to rely on setting begin manually
+											    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+											    data.element.animate(animationDefinition, false);
+
+											     
+											  }
+											  else
+											  {
+
+							 					data.element._node.classList.add('animated');
+						 						data.element._node.classList.add('fadeIn');
+						 						data.element._node.classList.add('animation-delay-'+ (parseInt(data.index)+1));
+	 				 					  		}
+											});
+	 			}
+	 			
+
+
+			}
+			scope.callBack(initChart);
+			
+
+			 
+ 			/*mainChart.responsiveOptions = {showLabel : false}
+
+ 			mainChart.on('draw',function(data)
+ 			{
+ 				if (data.type === 'slice')
+ 				{
+
+ 					data.element._node.onclick = function()
+	 				{
+	 					console.log(mainChart);
+	 					mainChart.options.showLabel = false; 
+	 					mainChart.update(mainChart.data,mainChart.options);
+	 					drawSubChart();
+	 					alert();
+
+	 				}
+ 				}
+ 				
+
+
+
+ 				drawSubChart = function(){
+
+		 					 
+			 				subChart = new Chartist.Pie('#'+element[0].querySelector('.sub-chart').id,{
+				 				series : [10,20,40,20],
+				 				labels : ["20", "aaa", "vv"]
+				 			},
+				 			subChartOptions)
+				 				.on('draw', function(data) {
+								  if(data.type === 'slice') {
+								    // Get the total path length in order to use for dash array animation
+								    var pathLength = data.element._node.getTotalLength();
+
+								    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
+								    data.element.attr({
+								      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+								    });
+
+								    // Create animation definition while also assigning an ID to the animation for later sync usage
+								    var animationDefinition = {
+								      'stroke-dashoffset': {
+								        id: 'anim' + data.index,
+								        dur: 500,
+								        from: -pathLength + 'px',
+								        to:  '0px',
+								        easing: Chartist.Svg.Easing.easeInOutSine,
+								        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
+								        fill: 'freeze'
+								      }
+								    };
+
+								    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
+								    if(data.index !== 0) {
+								      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+								    }
+
+								    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
+								    data.element.attr({
+								      'stroke-dashoffset': -pathLength + 'px'
+								    });
+
+								    // We can't use guided mode as the animations need to rely on setting begin manually
+								    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
+								    data.element.animate(animationDefinition, false);
+								  }
+								});
+		 			}
+
+ 			});*/
+
+	}
+
+
+	function getId()
+	{
+		return '_' + Math.random().toString(36).substr(2, 9);
+	}
+	return {
+		template : '<div style="position: relative;"><div class="main-chart"></div><div style="position : absolute; left : -20px; top : -20px;" class="sub-chart"></div></div>',
+		replace : true,
+		scope : 'controller',
+		link : link
+			 
+		}
+});
+
 
 app.directive('donuteChart',function()
 {
@@ -531,7 +806,7 @@ app.directive('donuteChart',function()
 		scope : {},
 		link : link
 	}
-})
+});
 
 app.filter('randomize', function()
 {

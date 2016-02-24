@@ -1,0 +1,276 @@
+{
+	"page_settings" : {
+		"companies" : "Case Studies",
+		"focus" : "Focus",
+		"info" : "Info",
+		"size" : "Company size",
+		"age" : "Company age"
+	},
+	"overview":{
+			"title": "e-health", 
+			"num": "196",
+			"turnover":[{"year":"2013","millions":"262.39"},
+				{"year":"2014","millions":"273.79"},
+				{"year":"2015","millions":"310"}
+			],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"27"},
+				{"type":"Established (2-5 years old)","num":"71"},
+				{"type":"Experienced (5+ years old)","num":"98"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73"},
+				{"type":"Patents (EPO)","num":"237"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "0.73",
+				"percent" : "3.4",
+				"length" : "5"
+			},{
+				"title" : "Patents",
+				"num" : "237",
+				"percent" : "13.8",
+				"length" : "40"
+			},{
+				"title" : "No of companies",
+				"num" : "196",
+				"percent" : "13.7",
+				"length" : "15"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "310",
+				"percent" : "30",
+				"length" : "40"
+			
+			}]
+		},
+	"items": [
+		
+		{
+			"title": "Diagnostics & Pathology", 
+			"num": "134",
+			"turnover":[{"year":"2013","millions":"149.18"},
+				{"year":"2014","millions":"157.6"},
+				{"year":"2015","millions":"164.05"
+			}],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"37"},
+				{"type":"Established (2-5 years old)","num":"44"},
+				{"type":"Experienced (5+ years old)","num":"53"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"1.09"},
+				{"type":"Patents (EPO)","num":"96"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "1.09",
+				"percent" : "5",
+				"length" : "5"
+			},{
+				"title" : "Patents",
+				"num" : "96",
+				"percent" : "5.6",
+				"length" : "15"
+			},{
+				"title" : "No of companies",
+				"num" : "134",
+				"percent" : "9.4",
+				"length" : "15"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "164.05",
+				"percent" : "16",
+				"length" : "65"
+			
+			}]
+		},
+		{
+			"title": "Genomics", 
+			"num": "79",
+			"turnover":[{"year":"2013","millions":"87.87"},
+				{"year":"2014","millions":"110.31"},
+				{"year":"2015","millions":"108.12"
+			}],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"13"},
+				{"type":"Established (2-5 years old)","num":"26"},
+				{"type":"Experienced (5+ years old)","num":"40"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"5.35"},
+				{"type":"Patents (EPO)","num":"191"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "5.35",
+				"percent" : "24.4",
+				"length" : "5"
+			},{
+				"title" : "Patents",
+				"num" : "191",
+				"percent" : "11.1",
+				"length" : "45"
+			},{
+				"title" : "No of companies",
+				"num" : "79",
+				"percent" : "5.6",
+				"length" : "15"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "108.12",
+				"percent" : "10",
+				"length" : "35"
+			
+			}]
+		},
+		{
+			"title": "Informatics", 
+			"num": "635",
+			"turnover":[{"year":"2013","millions":"124.22"},
+				{"year":"2014","millions":"354.54"},
+				{"year":"2015","millions":"378.85"
+			}],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"118"},
+				{"type":"Established (2-5 years old)","num":"247"},
+				{"type":"Experienced (5+ years old)","num":"270"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"11.79"},
+				{"type":"Patents (EPO)","num":"1181"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "11.79",
+				"percent" : "53.7",
+				"length" : "5"
+			},{
+				"title" : "Patents",
+				"num" : "1181",
+				"percent" : "68.6",
+				"length" : "45"
+			},{
+				"title" : "No of companies",
+				"num" : "635",
+				"percent" : "44.3",
+				"length" : "30"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "378.85",
+				"percent" : "37",
+				"length" : "20"
+			
+			}]
+		},
+		{
+			"title": "Digital Med", 
+			"num": "293",
+			"turnover":[{"year":"2013","millions":"48.03"},
+				{"year":"2014","millions":"61.23"},
+				{"year":"2015","millions":"72.04"
+			}],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"61"},
+				{"type":"Established (2-5 years old)","num":"113"},
+				{"type":"Experienced (5+ years old)","num":"119"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"3.02"},
+				{"type":"Patents (EPO)","num":"5"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "3.02",
+				"percent" : "13.8",
+				"length" : "5"
+			},{
+				"title" : "No of companies",
+				"num" : "293",
+				"percent" : "20.5",
+				"length" : "80"
+			},
+			{
+				"title" : "Patents",
+				"num" : "5",
+				"percent" : "0.3",
+				"length" : "5"
+			},
+			{
+				"title" : "Turnover (millions)",
+				"num" : "72.04",
+				"percent" : "7",
+				"length" : "10"
+			
+			}]
+		},
+		{
+			"title": "Imaging", 
+			"num": "97",
+			"turnover":[{"year":"2013","millions":"0.59"},
+				{"year":"2014","millions":"0.39"},
+				{"year":"2015","millions":"0.47"
+			}],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"29"},
+				{"type":"Established (2-5 years old)","num":"37"},
+				{"type":"Experienced (5+ years old)","num":"31"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0"},
+				{"type":"Patents (EPO)","num":"12"}
+			],
+			"items":[{
+				"title" : "Patents",
+				"num" : "12",
+				"percent" : "0.7",
+				"length" : "10"
+			},{
+				"title" : "No of companies",
+				"num" : "97",
+				"percent" : "6.8",
+				"length" : "85"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "0.47",
+				"percent" : "0.1",
+				"length" : "5"
+			
+			}]
+
+		},
+		{
+			"title": "Med Tech", 
+			"num": "196",
+			"turnover":[{"year":"2013","millions":"262.39"},
+				{"year":"2014","millions":"273.79"},
+				{"year":"2015","millions":"310"}
+			],
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"27"},
+				{"type":"Established (2-5 years old)","num":"71"},
+				{"type":"Experienced (5+ years old)","num":"98"}
+			],
+			"sector_title":"E-HEALTH INNOVATION:",
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73"},
+				{"type":"Patents (EPO)","num":"237"}
+			],
+			"items":[{
+				"title" : "Grants",
+				"num" : "0.73",
+				"percent" : "3.4",
+				"length" : "5"
+			},{
+				"title" : "Patents",
+				"num" : "237",
+				"percent" : "13.8",
+				"length" : "40"
+			},{
+				"title" : "No of companies",
+				"num" : "196",
+				"percent" : "13.7",
+				"length" : "15"
+			},{
+				"title" : "Turnover (millions)",
+				"num" : "310",
+				"percent" : "30",
+				"length" : "40"
+			
+			}]
+		}
+	]
+}

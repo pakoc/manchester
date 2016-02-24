@@ -569,14 +569,21 @@ app.directive('doubleDonuteChart', function()
  						// console.log(data.element._node.offsetTop, x_0, y_0 );
  						var kx = 1;
  						var ky = 1;
- 						var stroke = 'red';
- 						if (data.element._node.offsetLeft - x_0 < 0 ) { kx = -1 ; }
+ 						var stroke = '#555555';
+ 						var elem_x = data.element._node.offsetLeft - x_0;
+ 						var elem_y = data.element._node.offsetTop + data.element._node.offsetHeight/1.8 - y_0;
+ 						var end_line_x = data.element._node.offsetLeft + data.element._node.offsetWidth;
+ 						if (elem_x < 0 ) {
+ 							 kx = -1 ; 
+ 							 elem_x = data.element._node.offsetLeft + data.element._node.offsetWidth - x_0;
+ 							 end_line_x = data.element._node.offsetLeft;
+ 						};
  						if (data.element._node.offsetLeft - y_0 < 0 ) { ky = -1 ; }
- 						var ang = (Math.atan((data.element._node.offsetTop - y_0)/(data.element._node.offsetLeft - x_0)));
+ 						var ang = (Math.atan((elem_y)/(elem_x)));
  						var x1 = x_0+(kx)*Math.cos(ang)*110;
  						var y1 = y_0+(ky)*Math.sin(ang)*110;
  						var x2 = x_0+(kx)*Math.cos(ang)*140;
- 						var y2 = y_0+(ky)*Math.sin(ang)*140;
+ 						var y2 = y_0+(ky)*Math.sin(ang)*146;
  						
  						
  						//console.log(x_0+Math.cos(ang)*120, y_0+Math.sin(ang)*100, scope.mainChartData[data.index]);
@@ -585,9 +592,10 @@ app.directive('doubleDonuteChart', function()
  						var line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
  						//if (kx>0)
  						{
- 							line.setAttribute('points', x1 + ',' + y1 + ',' + x2 + ',' + y2);
+ 							line.setAttribute('points', x1 + ',' + y1 + ',' + x2 + ',' + y2 + ',' + end_line_x + ',' + y2);
  						line.setAttribute('stroke-width', '1');
  						line.setAttribute('stroke', stroke);
+ 						line.setAttribute('fill-opacity', '0');
  						line.setAttribute('title', scope.mainChartData[data.index].num)
  						data.element._node.parentNode.appendChild(line);
  						}

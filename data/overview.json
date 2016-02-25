@@ -62,15 +62,16 @@
 				{"type":"Patents (EPO)","num":"96"}
 			],
 			"items":[{
-				"title" : "Grants",
-				"num" : "1.09",
-				"percent" : "5",
-				"length" : "5"
-			},{
 				"title" : "Patents",
 				"num" : "96",
 				"percent" : "5.6",
 				"length" : "15"
+			},
+			{
+				"title" : "Grants",
+				"num" : "1.09",
+				"percent" : "5",
+				"length" : "5"
 			},{
 				"title" : "No of companies",
 				"num" : "134",

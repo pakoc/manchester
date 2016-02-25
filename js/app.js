@@ -459,7 +459,7 @@ app.directive('barChart',function(){
 	{
 		var options = {
 			part 	 : attrs.part || 0,
-			all  	 : attrs.all || 100,
+			all  	 : attrs.all  || 100,
 			barColor : attrs.barcolor || '#00673C',
 			title    : attrs.title || false,
 			label    : attrs.label || false
@@ -481,294 +481,318 @@ app.directive('barChart',function(){
 
 app.directive('doubleDonuteChart', function()
 {
-	var link = function(scope,element,attrs)
+
+
+	var link = function(scope,element,attrs){
+		var mainChartOptions = {
+			donut : true,
+				donutWidth : 35,
+				height : 530,
+				width : 530,
+				labelDirection: 'explode',
+				labelOffset: 100,
+				chartPadding: 160,
+				showLabel : true,
+				responsive : false				
+		},
+		subChartOptions = {
+			donut : true,
+				donutWidth : 30,
+				height : 570,
+				width : 570,
+				labelDirection: 'explode',
+				labelOffset: 40,
+				chartPadding: 150,
+				showLabel : true,
+				responsive : false
+		},
+		mainChart = null,
+		subChart = null;
+		var initChart = function()
 		{
-			var mainChartOptions = {
-				donut : true,
- 				donutWidth : 35,
- 				height : 530,
- 				width : 530,
- 				labelDirection: 'explode',
- 				labelOffset: 60,
- 				chartPadding: 160,
- 				showLabel : true,
- 				responsive : false,
- 				textAnchor: 'middle'
-
-			},
-			subChartOptions = {
-				donut : true,
- 				donutWidth : 30,
- 				height : 570,
- 				width : 570,
- 				labelDirection: 'explode',
- 				labelOffset: 30,
- 				chartPadding: 150,
- 				showLabel : true,
- 				responsive : false
-			},
-			mainChart = null,
-			subChart = null;
-			var initChart = function()
+			var series  = [], labels = [],
+			mainChartId = element[0].querySelector('.main-chart').id = getId(),
+				subChartId  = element[0].querySelector('.sub-chart').id = getId();
+			scope.mainChartData.forEach(function(item)
 			{
-				 
-				var series =[], labels = []; 
-				(function()
-				{
-					scope.mainChartData.forEach(function(item)
-					{
-						series.push(item.num);
-						labels.push(item.title + ' >' );
-					});
-				}());
-				   
-				var mainChartId = element[0].querySelector('.main-chart').id = getId();
- 				var subChartId = element[0].querySelector('.sub-chart').id = getId();
- 				mainChart =  new Chartist.Pie('#'+mainChartId,{
-	 				series : series,
-	 				labels : labels,
-	 			},
-	 			mainChartOptions);
-  				var index = 0;
-	 			mainChart.on('draw',function(data){
-	 				if (data.type === 'slice')
-	 				{
-	 					data.element._node.value = data.value;
-	 					data.element._node.onclick = function(e)
-	 					{
-	 						if (scope.isSubChartExist)
-	 						{
-	 							mainChart.options.showLabel = true;
-	 							clearSubChart();
-	 							scope.isSubChartExist = false;
-	 						}
-	 						else
-	 						{
-	 							mainChart.options.showLabel = false;
-		 						drawSubChart(e.target.value);
-		 						scope.isSubChartExist = true;
-	 						}
-	 						mainChart.update(mainChart.data, mainChart.options);	
-	 					}
-
-	 					//x_0 = 
-	 				}
-	 				else
-	 				{
-	 					data.element._node.classList.add('animated');
- 						data.element._node.classList.add('fadeIn');
- 						data.element._node.classList.add('animation-delay-'+ data.index);
- 						//console.log(data.index)
- 						var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
- 						tspan.innerHTML = scope.mainChartData[data.index].num + ' companies';
- 						tspan.setAttribute('dy', 16);
- 						tspan.setAttribute('dx', -data.element._node.offsetWidth);
- 						data.element._node.appendChild(tspan)
- 						var x_0 = mainChart.container.children[0].offsetWidth/2;
- 						var y_0 = mainChart.container.children[0].offsetHeight/2;
- 						// console.log(data.element._node.offsetTop, x_0, y_0 );
- 						var kx = 1;
- 						var ky = 1;
- 						var stroke = '#555555';
- 						var elem_x = data.element._node.offsetLeft - x_0;
- 						var elem_y = data.element._node.offsetTop + data.element._node.offsetHeight/1.8 - y_0;
- 						var end_line_x = data.element._node.offsetLeft + data.element._node.offsetWidth;
- 						if (elem_x < 0 ) {
- 							 kx = -1 ; 
- 							 elem_x = data.element._node.offsetLeft + data.element._node.offsetWidth - x_0;
- 							 end_line_x = data.element._node.offsetLeft;
- 						};
- 						if (data.element._node.offsetLeft - y_0 < 0 ) { ky = -1 ; }
- 						var ang = (Math.atan((elem_y)/(elem_x)));
- 						var x1 = x_0+(kx)*Math.cos(ang)*110;
- 						var y1 = y_0+(ky)*Math.sin(ang)*110;
- 						var x2 = x_0+(kx)*Math.cos(ang)*140;
- 						var y2 = y_0+(ky)*Math.sin(ang)*146;
- 						
- 						
- 						//console.log(x_0+Math.cos(ang)*120, y_0+Math.sin(ang)*100, scope.mainChartData[data.index]);
- 						//console.log(x_0+Math.cos(ang)*200, y_0+Math.sin(ang)*200, scope.mainChartData[data.index]);
-//<polyline points="0,0 50,0 150,100 250,100 300,150" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
- 						var line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
- 						//if (kx>0)
- 						{
- 							line.setAttribute('points', x1 + ',' + y1 + ',' + x2 + ',' + y2 + ',' + end_line_x + ',' + y2);
- 						line.setAttribute('stroke-width', '1');
- 						line.setAttribute('stroke', stroke);
- 						line.setAttribute('fill-opacity', '0');
- 						line.setAttribute('title', scope.mainChartData[data.index].num)
- 						data.element._node.parentNode.appendChild(line);
- 						}
-	 				}
-	 				 
-
-	 				
-
-	 			});
-	 			function clearSubChart()
-	 			{
-	 				 document.querySelector( '#'+subChartId+' svg').remove();
-	 				 subChart.detach();
-	 			}
-	 			function drawSubChart(val)
-	 			{
-	 				 
-	 				var subSeries = [],
-	 					subLabels = [];
-	 				var item  = scope.mainChartData.filter(function(item)
-	 				{
-	 					return item.num == val;
-	 				});
-
-	 				(function()
-					{
-						item[0].items.forEach(function(item)
-						{
-							subSeries.push(item.num);
-							subLabels.push(item.title + '('+item.percent+'%)');
-						});
-					}());
-	 				subChart = new Chartist.Pie('#'+subChartId,{
-		 				series : subSeries,
-		 				labels : subLabels
-		 			},
-		 			subChartOptions)
-					 				.on('draw', function(data) {
-
-											  if(data.type === 'slice') {
-
-											    // Get the total path length in order to use for dash array animation
-											    var pathLength = data.element._node.getTotalLength();
-
-											    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
-											    data.element.attr({
-											      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
-											    });
-
-											    // Create animation definition while also assigning an ID to the animation for later sync usage
-											    var animationDefinition = {
-											      'stroke-dashoffset': {
-											        id: 'anim' + data.index,
-											        dur: 500,
-											        from: -pathLength + 'px',
-											        to:  '0px',
-											        easing: Chartist.Svg.Easing.easeInSine,
-											        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
-											        fill: 'freeze'
-											      }
-											    };
-
-											    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
-											    if(data.index !== 0) {
-											      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
-											    }
-
-											    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
-											    data.element.attr({
-											      'stroke-dashoffset': -pathLength + 'px'
-											    });
-
-											    // We can't use guided mode as the animations need to rely on setting begin manually
-											    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
-											    data.element.animate(animationDefinition, false);
-
-											     
-											  }
-											  else
-											  {
-
-							 					data.element._node.classList.add('animated');
-						 						data.element._node.classList.add('fadeIn');
-						 						data.element._node.classList.add('animation-delay-'+ (parseInt(data.index)+1));
-	 				 					  		}
-											});
-	 			}
-	 			
-
-
-			}
-			scope.callBack(initChart);
-			
-
+				series.push(item.num);
+				labels.push(item.title);
+			});
 			 
- 			/*mainChart.responsiveOptions = {showLabel : false}
+				mainChart =  new Chartist.Pie('#'+mainChartId,{
+ 				series : series,
+ 				labels : labels,
+ 			}, mainChartOptions);
 
- 			mainChart.on('draw',function(data)
- 			{
+				addAnimation(mainChart.container, 'zoomIn', 1);
+				var index = 0;
+ 			mainChart.on('draw',function(data){
  				if (data.type === 'slice')
  				{
-
- 					data.element._node.onclick = function()
-	 				{
-	 					console.log(mainChart);
-	 					mainChart.options.showLabel = false; 
-	 					mainChart.update(mainChart.data,mainChart.options);
-	 					drawSubChart();
-	 					alert();
-
-	 				}
+ 					data.element._node.value = data.value;
+ 					data.element._node.onclick = function(e)
+ 					{		
+ 						if (scope.isSubChartExist)
+ 						{
+  							clearSubChart();
+ 							scope.isSubChartExist = false;
+ 							mainChart.update(mainChart.data, mainChart.options);	
+ 						}
+ 						else
+ 						{
+  							var textFields = mainChart.container.children[0].querySelectorAll('g>text.ct-label'),
+ 							lines = mainChart.container.children[0].querySelectorAll('polyline');
+ 							[].forEach.call(textFields,function(item,index){
+ 								item.style.visibility = 'hidden';
+ 								lines[index].style.visibility = 'hidden';
+ 							});
+							textFields[data.index].style.visibility = 'visible';
+							lines[data.index].style.visibility = 'visible';
+	 						drawSubChart(e.target.value);
+	 						scope.isSubChartExist = true;
+ 						}
+ 						
+ 					}
  				}
- 				
+ 				else
+ 				{
+					addAnimation(data.element._node, 'fadeIn', data.index);
+					var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+					tspan.innerHTML = scope.mainChartData[data.index].num + ' companies';
+					setAttributes(tspan, {
+						'dy' : '20',
+						'dx' : -data.element._node.offsetWidth
+					});
+					data.element._node.appendChild(tspan);
+					var line = drawLineForLabel({
+						wrapper : mainChart.container.children[0],
+						elem : data.element._node,
+						radius : 105,
+						line_length : 80,
+						stroke : '#999999',
+						 underline : true
+					})
+					addAnimation(line, 'fadeIn', data.index);	 
+ 				}
 
+ 			});
 
+				mainChart.on('created',function(item){
+				
+				var group  = document.createElementNS("http://www.w3.org/2000/svg", "g");
+				 
+				item.svg._node.appendChild(group);
 
- 				drawSubChart = function(){
+				var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+				setAttributes(circle, {
+					'cx' : item.svg._node.offsetWidth/2,
+					'cy' : item.svg._node.offsetHeight/2,
+					'r'  : '70',
+					'fill' : '#eeeeee',
+				});
+				group.appendChild(circle);
+				var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+				 
+				setAttributes(text, {
+					'dx' : 209,
+					'dy' : 235
+				});
+ 
+				addTspan({
+					text : 'total companies:',
+					wrapper : text,
+					attrs : {
+						'font-size' : 12,
+						'dx' : 224,
+					}
+				});
+				addTspan({
+					text : '1434',
+					wrapper : text,
+					attrs : {
+						'font-size' : 14,
+						'dy' : 20,
+						'dx' : -62,
+						'style' : 'font-weight : bold'
+					}
+				});
+				addTspan({
+					text : 'total turnover:',
+					wrapper : text,
+					attrs : {
+						'font-size' : 12,
+						'dy' : 25,
+						'dx' : -50						 
+					}
+				});
+				addTspan({
+					text : '1033.53 mil',
+					wrapper : text,
+					attrs : {
+						'font-size' : 14,
+						'dy' : 20,
+						'dx' : -76,
+						'style' : 'font-weight : bold'						 
+					}
+				});
 
-		 					 
-			 				subChart = new Chartist.Pie('#'+element[0].querySelector('.sub-chart').id,{
-				 				series : [10,20,40,20],
-				 				labels : ["20", "aaa", "vv"]
-				 			},
-				 			subChartOptions)
+				group.appendChild(text);
+
+				
+				 
+			});
+
+			function addTspan(options){
+					var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+					tspan.innerHTML = options.text;
+					options.wrapper.appendChild(tspan);
+					setAttributes(tspan, options.attrs);
+					return tspan;
+			}
+ 			function clearSubChart()
+ 			{
+ 				 document.querySelector( '#'+subChartId+' svg').remove();
+ 				 subChart.detach();
+ 			}
+ 			function drawSubChart(val)
+ 			{
+ 				 
+ 				var subSeries = [],
+ 					subLabels = [];
+ 				var item  = scope.mainChartData.filter(function(item)
+ 				{
+ 					return item.num == val;
+ 				});
+				item[0].items.forEach(function(item)
+				{
+					subSeries.push(item.num);
+					subLabels.push(item.num + ' ('+item.percent+'%)');
+				});
+ 				subChart = new Chartist.Pie('#'+subChartId,{
+	 				series : subSeries,
+	 				labels : subLabels
+	 			},subChartOptions)
 				 				.on('draw', function(data) {
-								  if(data.type === 'slice') {
-								    // Get the total path length in order to use for dash array animation
-								    var pathLength = data.element._node.getTotalLength();
 
-								    // Set a dasharray that matches the path length as prerequisite to animate dashoffset
-								    data.element.attr({
-								      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
-								    });
+										  if(data.type === 'slice') {
 
-								    // Create animation definition while also assigning an ID to the animation for later sync usage
-								    var animationDefinition = {
-								      'stroke-dashoffset': {
-								        id: 'anim' + data.index,
-								        dur: 500,
-								        from: -pathLength + 'px',
-								        to:  '0px',
-								        easing: Chartist.Svg.Easing.easeInOutSine,
-								        // We need to use `fill: 'freeze'` otherwise our animation will fall back to initial (not visible)
-								        fill: 'freeze'
-								      }
-								    };
+										    var pathLength = data.element._node.getTotalLength();
 
-								    // If this was not the first slice, we need to time the animation so that it uses the end sync event of the previous animation
-								    if(data.index !== 0) {
-								      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
-								    }
+											    data.element.attr({
+										      'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'
+										    });
 
-								    // We need to set an initial value before the animation starts as we are not in guided mode which would do that for us
-								    data.element.attr({
-								      'stroke-dashoffset': -pathLength + 'px'
-								    });
+										     
+										    var animationDefinition = {
+										      'stroke-dashoffset': {
+										        id: 'anim' + data.index,
+										        dur: 500,
+										        from: -pathLength + 'px',
+										        to:  '0px',
+										        easing: Chartist.Svg.Easing.easeInSine,
+										        fill: 'freeze'
+										      }
+										    };
 
-								    // We can't use guided mode as the animations need to rely on setting begin manually
-								    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
-								    data.element.animate(animationDefinition, false);
-								  }
-								});
-		 			}
+										    if(data.index !== 0) {
+										      animationDefinition['stroke-dashoffset'].begin = 'anim' + (data.index - 1) + '.end';
+										    }
 
- 			});*/
+										    data.element.attr({
+										      'stroke-dashoffset': -pathLength + 'px'
+										    });
+										    data.element.animate(animationDefinition, false);
+										     
+										  }
+										  else
+										  {
+										  		var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+										  		console.log(item[0].items[data.index].title,'s')
+													//tspan.innerHTML = item[0][data.index].num + ' companies';
+													setAttributes(tspan, {
+														'dy' : '20',
+														'dx' : -data.element._node.offsetWidth
+													});
+													tspan.innerHTML = item[0].items[data.index].title;
+													data.element._node.appendChild(tspan);
+													var line = drawLineForLabel({
+														wrapper : subChart.container.children[0],
+														elem : data.element._node,
+														radius : 133,
+														line_length : 12,
+														stroke : '#999999',
+														underline : false
+													})
 
+						 						addAnimation(data.element._node, 'fadeIn', (parseInt(data.index)+1));
+					 							
+ 
+ 				 					  		}
+										});
+ 			};
+		}
+		scope.callBack(initChart);
 	}
 
+
+	function setAttributes(item, attrs)
+	{
+		for (attr in attrs)
+		{
+			item.setAttribute(attr, attrs[attr])
+		}
+	}
+
+	function addAnimation(elem, animation, delay)
+	{
+		elem.classList.add('animated')
+		elem.classList.add(animation);
+		elem.classList.add('animation-delay-'+ delay);
+	}
+
+	function drawLineForLabel(option)
+	{
+		// svg_container, wrapper, elem, stroke
+		var x_0 = option.wrapper.offsetWidth/2,
+			y_0 = option.wrapper.offsetHeight/2,
+			kx = 1, ky = 1,
+			elem_x = option.elem.offsetLeft - x_0,
+			elem_y = option.elem.offsetTop + option.elem.offsetHeight/2 - y_0,
+			end_line_x = option.elem.offsetLeft + option.elem.offsetWidth,
+			x1 = 0, x2 = 0, y1 = 0, y2 = 0,
+			radius = option.radius || 100,
+			line_length = option.line_length || 80,
+			ang = 0,
+			line = null,
+			stroke = option.stroke || "red";
+		if (elem_x < 0)
+		{
+			kx = -1;
+			elem_x = option.elem.offsetLeft + option.elem.offsetWidth - x_0;
+			end_line_x = option.elem.offsetLeft;
+		};
+		if (option.elem.offsetLeft - y_0 < 0 ) { ky = -1 ; }
+		  	ang = (Math.atan((elem_y)/(elem_x)));
+			x1 = x_0+(kx)*Math.cos(ang)*radius;
+			y1 = y_0+(ky)*Math.sin(ang)*radius;
+			x2 = x_0+(kx)*Math.cos(ang)*(radius+line_length);
+			y2 = y_0+(ky)*Math.sin(ang)*(radius+line_length);
+		line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+		setAttributes(line, {
+			'points' : (option.underline) ? (x1 + ',' + y1 + ',' + x2 + ',' + y2  + ',' + end_line_x + ',' + y2) :  (x1 + ',' + y1 + ',' + x2 + ',' + y2),
+			'stroke-width' : '1',
+			'stroke': stroke,
+			'fill-opacity' : '0'
+		});
+		option.elem.parentNode.appendChild(line);
+		return line;
+	}
 
 	function getId()
 	{
 		return '_' + Math.random().toString(36).substr(2, 9);
 	}
+
 	return {
 		template : '<div style="position: relative;"><div class="main-chart"></div><div style="position : absolute; left : -20px; top : -20px;" class="sub-chart"></div></div>',
 		replace : true,

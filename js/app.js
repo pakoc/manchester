@@ -435,10 +435,10 @@ app.directive('myMap', function() {
 app.controller('OverviewPageController',function($scope, $http, $location){
 	$scope.mainChartData = {};
 	$scope.isSubChartExist = false;
-	var initChart;
+	var fun_initChart;
 	$scope.callBack = function(f_initChart)
 	{
-		initChart = f_initChart;
+		fun_initChart = f_initChart;
 	}
 	$http.get('data/'+$location.path()+'.json',{cache:false}).success(function(data){
 		console.log(data.items);
@@ -450,28 +450,33 @@ app.controller('OverviewPageController',function($scope, $http, $location){
 	function init(data)
 	{
 		$scope.mainChartData = data.items;
-		initChart();
+		$scope.defaultChartData = data.overview;
+		$scope.currentChartData = data.overview;
+		fun_initChart();
 	}
 });
 
 app.directive('barChart',function(){
 	var link  = function(scope, element, attrs)
 	{
+
 		var options = {
 			part 	 : attrs.part || 0,
 			all  	 : attrs.all  || 100,
 			barColor : attrs.barcolor || '#00673C',
 			title    : attrs.title || false,
-			label    : attrs.label || false
+			label    : attrs.label || false,
+			leftlabel : attrs.leftlabel || false
 		},
 		bar = element[0].querySelector('.bar');
 		bar.style.width = element[0].offsetWidth * options.part/options.all + 'px';
 		bar.style.backgroundColor = options.barColor;
 		scope.title = options.title;
 		scope.label = options.label;
+		scope.leftlabel = options.leftlabel;
 	}
 	return {
-		template : '<div><label ng-if="title" class="bar-chart-title">{{title}}:</label><div class="bar-chart"><div class="bar"></div><span ng-if="label" class="bar-chart-label">{{label}}</span></div></div>',
+		template : '<div><label ng-if="title" class="bar-chart-title">{{title}}:</label><div class="bar-chart"><span ng-if="leftlabel" class="left-label">{{leftlabel}}</span><div class="bar"></div><span ng-if="label" class="bar-chart-label">{{label}}</span></div></div>',
 		replace  : true,
 		scope: {},
 		link     : link
@@ -531,12 +536,15 @@ app.directive('doubleDonuteChart', function()
  				{
  					data.element._node.value = data.value;
  					data.element._node.onclick = function(e)
- 					{		
+ 					{	
+
  						if (scope.isSubChartExist)
  						{
   							clearSubChart();
  							scope.isSubChartExist = false;
  							mainChart.update(mainChart.data, mainChart.options);	
+
+ 							scope.$apply(scope.currentChartData = scope.defaultChartData);
  						}
  						else
  						{
@@ -550,6 +558,8 @@ app.directive('doubleDonuteChart', function()
 							lines[data.index].style.visibility = 'visible';
 	 						drawSubChart(e.target.value);
 	 						scope.isSubChartExist = true;
+
+	 						scope.$apply(scope.currentChartData = scope.mainChartData[data.index]);
  						}
  						
  					}

@@ -96,7 +96,9 @@
 	}
 	.double-chart
 	{
-		left: 120px;
+		top : -20px;
+		left: 60px;
+		height : 400px;
 	}
 
 
@@ -167,92 +169,71 @@
 	}
 
 
+	.overview-bar-charts .bar-chart{
+		border : 0;
+		background: #887D7D;
+		margin-bottom: 10px;
+
+	}
+	.overview-bar-charts .bar-chart .bar{
+		background-color: #18A3CC!important;
+	}
+	.overview-bar-charts .bar-chart .bar-chart-label
+	{
+		right : 4px;
+		top : 4px;
+	}
+
+	.overview-bar-charts .bar-chart .left-label
+	{
+		position: absolute;
+		z-index: 1;
+		left: 4px;
+		color : #FFF;
+	}
+
 </style>
 <div class="wrapper">
 	 			
 	 			<div class="container-fluid">
-		 			<div class="col-xs-4">
-		 				<h1>Creative & Digital</h1>
-		 				<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+		 			<div class="col-xs-4 block">
+		 				<div>
+		 					<h1 class="band">Turnover:</h1>	
+		 					<div style="height : 150px;">
+		 					</div>
+		 				</div>	
+		 				<div>
+		 					<h1 class="band">Company Breakdown:</h1>
+		 					<div class="overview-bar-charts" style="padding : 10px 10px">	
+			 					<div ng-repeat="item in currentChartData.company_breakdown" bar-chart data-part="{{item.num}}" data-label="{{item.num}}" data-all="700" data-barcolor="red" data-title="{{item.type}}"></div>
+			 					 
+			 				</div>
+		 				</div>
+		 				<div>
+		 					<h1 class="band">E-health innovation:</h1>
+		 					<div class="overview-bar-charts" style="padding : 10px 10px">
+		 						<div ng-repeat="item in currentChartData.sector_data" bar-chart data-part="{{item.num}}" data-label="{{item.num}}" data-leftlabel="{{item.type}}" data-all="{{item.total}}" data-barcolor="blue" ></div>
+		 						 
+		 					</div>	
+		 				</div>			 				
+		 				<div style="height : 150px;">
+		 					<h1 class="band">Geo tag data:</h1>
+		 					 MAP
+		 					 {{currentChartData.title}}
+		 				</div>	
 		 			</div>
-		 			<div class="col-xs-8 overview-chart" style="position: relative; height: 400px;">
-
-		 				<div class="double-chart" double-donute-chart></div>
-		 				<!--<div class="chart-group software-data">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="2456"  data-part="165" data-label="165"></div>
-		 							<div bar-chart data-all="2456" data-part="1535" data-label="1535"></div>
-		 							<div bar-chart data-all="2456" data-part="954" data-label="954"></div>
-		 							<span>Software & data</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="200" height="200" series="2456" labels="2456"   stroke="green"></div>
-		 				</div> 
-
-		 				<div class="chart-group e-commerce">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="860" data-part="131" data-label="131" data-barcolor="#2375B6"></div>
-		 							<div bar-chart data-all="860" data-part="553" data-label="553" data-barcolor="#2375B6"></div>
-		 							<div bar-chart data-all="860" data-part="176" data-label="176" data-barcolor="#2375B6"></div>
-		 							<span>E-commerce</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="140" height="140" series="860" labels="860"   stroke="#2375B6"></div>
-		 				</div> 
-
-		 				<div class="chart-group broadcast">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="810" data-part="54" data-label="54" data-barcolor="#05AD9C"></div>
-		 							<div bar-chart data-all="810" data-part="462" data-label="462" data-barcolor="#05AD9C"></div>
-		 							<div bar-chart data-all="810" data-part="294" data-label="294" data-barcolor="#05AD9C"></div>
-		 							<span>Broadcast & Media Production</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="140" height="140" series="810" labels="810"   stroke="#05AD9C"></div>
-		 				</div> 
-
-		 				<div class="chart-group advertising">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="752" data-part="30" data-label="30" data-barcolor="#8A33B9"></div>
-		 							<div bar-chart data-all="752" data-part="427" data-label="427" data-barcolor="#8A33B9"></div>
-		 							<div bar-chart data-all="752" data-part="295" data-label="295" data-barcolor="#8A33B9"></div>
-		 							<span>Advertising & Digital Media</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="120" height="120" series="759" labels="752" stroke="#552072"></div>
-		 				</div> 
-
-		 				<div class="chart-group e-health">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="255" data-part="26" data-label="26" data-barcolor="#695EED"></div>
-		 							<div bar-chart data-all="255" data-part="169" data-label="169" data-barcolor="#695EED"></div>
-		 							<div bar-chart data-all="255" data-part="60" data-label="60" data-barcolor="#695EED"></div>
-		 							<span>E-health</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="100" height="100" series="759" labels="255" stroke="#695EED"></div>
-		 				</div> 
-
-		 				<div class="chart-group games">
-		 						<div class="chart-group" style="width : 100px;">
-		 							<div bar-chart data-all="142" data-part="17" data-label="26" data-barcolor="#74D451"></div>
-		 							<div bar-chart data-all="142" data-part="71" data-label="169" data-barcolor="#74D451"></div>
-		 							<div bar-chart data-all="142" data-part="54" data-label="60" data-barcolor="#74D451"></div>
-		 							<span>Games & AR</span>
-		 						</div>
-		 						<div class="bounceIn animated animation-delay-{{ 5 | randomize}}" donute-chart width="80" height="80" series="142" labels="142" stroke="#74D451"></div>
-		 				</div> -->
-		 				
-
+		 			<div class="col-xs-8 overview-chart block" style="position: relative;">
+		 				 <div style=" background : #eeeeee;">
+			 				<h1 class="band">{{currentChartData.title}}</h1> 
+			 				
+			 				<div class="double-chart" double-donute-chart></div>
+			 				<div style="padding : 5px;">
+			 					<h3>Description:</h3>
+			 					<p>Lorem isum dolor
+			 					Lorem isum dolorLorem isum dolorLorem isum dolorLorem isum dolorLorem isum dolorLorem isum dolor</p>
+			 				</div>
+		 				 </div>
 		 			</div>
-		 		</div>
-		 		<div class="container-fluid">
-			 		<div class="col-xs-4">
-			 			1
-			 		</div>
-			 		<div class="col-xs-4">
-			 			1
-			 		</div>
-			 		<div class="col-xs-4">
-			 			1
-			 		</div>
-			 	</div>
-		 	
-		
+		 		</div>	 	
 
 </div><!--end wrapper-->

@@ -13,13 +13,13 @@
 				{"year":"2014","millions":"273.79"},
 				{"year":"2015","millions":"310"}
 			],
-			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"27"},
-				{"type":"Established (2-5 years old)","num":"71"},
-				{"type":"Experienced (5+ years old)","num":"98"}
+			"company_breakdown":[{"type":"Start Ups (0-2 years old)","num":"285"},
+				{"type":"Established (2-5 years old)","num":"538"},
+				{"type":"Experienced (5+ years old)","num":"611"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73"},
-				{"type":"Patents (EPO)","num":"237"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73","total":"15"},
+				{"type":"Patents (EPO)","num":"237", "total" : "2000"}
 			],
 			"items":[{
 				"title" : "Grants",
@@ -58,8 +58,8 @@
 				{"type":"Experienced (5+ years old)","num":"53"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"1.09"},
-				{"type":"Patents (EPO)","num":"96"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"1.09","total":"15"},
+				{"type":"Patents (EPO)","num":"96","total":"2000"}
 			],
 			"items":[{
 				"title" : "Patents",
@@ -97,8 +97,8 @@
 				{"type":"Experienced (5+ years old)","num":"40"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"5.35"},
-				{"type":"Patents (EPO)","num":"191"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"5.35","total":"15"},
+				{"type":"Patents (EPO)","num":"191","total" : "2000"}
 			],
 			"items":[{
 				"title" : "Grants",
@@ -135,8 +135,8 @@
 				{"type":"Experienced (5+ years old)","num":"270"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"11.79"},
-				{"type":"Patents (EPO)","num":"1181"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"11.79","total":"15"},
+				{"type":"Patents (EPO)","num":"1181","total" : "2000"}
 			],
 			"items":[{
 				"title" : "Grants",
@@ -173,8 +173,8 @@
 				{"type":"Experienced (5+ years old)","num":"119"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"3.02"},
-				{"type":"Patents (EPO)","num":"5"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"3.02","total":"15"},
+				{"type":"Patents (EPO)","num":"5","total" : "2000"}
 			],
 			"items":[{
 				"title" : "Grants",
@@ -213,8 +213,8 @@
 				{"type":"Experienced (5+ years old)","num":"31"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"0"},
-				{"type":"Patents (EPO)","num":"12"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0","total":"15"},
+				{"type":"Patents (EPO)","num":"12","total" : "2000"}
 			],
 			"items":[{
 				"title" : "Patents",
@@ -247,8 +247,8 @@
 				{"type":"Experienced (5+ years old)","num":"98"}
 			],
 			"sector_title":"E-HEALTH INNOVATION:",
-			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73"},
-				{"type":"Patents (EPO)","num":"237"}
+			"sector_data":[{"type":"Research Grants (Millions)","num":"0.73","total":"15"},
+				{"type":"Patents (EPO)","num":"237","total" : "2000"}
 			],
 			"items":[{
 				"title" : "Grants",

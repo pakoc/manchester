@@ -249,7 +249,6 @@ app.controller('MapPageController',function($scope, $http, $location, $sce, $fil
 				top : 0,
 				gotoNewPosition : function(item, item_type)
 				{
-					console.log(item_type)
 					var dom_obj = document.querySelector('div[data-'+item_type+'="'+item.title+'"');
 					if (dom_obj)
 					{						
@@ -435,13 +434,13 @@ app.directive('myMap', function() {
 app.controller('OverviewPageController',function($scope, $http, $location){
 	$scope.mainChartData = {};
 	$scope.isSubChartExist = false;
-	var fun_initChart;
-	$scope.callBack = function(f_initChart)
+	var init_callbak_fun_arr = [];
+	$scope.callBack = function(f_init)
 	{
-		fun_initChart = f_initChart;
-	}
+		init_callbak_fun_arr.push(f_init);
+	};
+	
 	$http.get('data/'+$location.path()+'.json',{cache:false}).success(function(data){
-		console.log(data.items);
 		if (data.items){
 			init(data);
 		}
@@ -452,14 +451,39 @@ app.controller('OverviewPageController',function($scope, $http, $location){
 		$scope.mainChartData = data.items;
 		$scope.defaultChartData = data.overview;
 		$scope.currentChartData = data.overview;
-		fun_initChart();
+		$scope.lineChart = {
+			data : '11, 102, 12',
+			labels : '2013, 2014, 2015'
+		}
+		init_callbak_fun_arr.forEach(function(fun){
+			fun();
+		});
+		
+	};
+	$scope.turnover = {
+		labels : "2013,2014,2015",
+		data : "1,2,3"
 	}
+	$scope.$watch('currentChartData',function(data)
+	{
+		var labels_arr = [],
+			data_arr = [];
+		if (data&&data.turnover)
+		{
+			data.turnover.forEach(function(item){
+				labels_arr.push(item.year);
+				data_arr.push(item.millions);
+			});
+			$scope.turnover.labels = labels_arr.join(',');
+			$scope.turnover.data = data_arr.join(',');
+		}		 
+	});
+		
 });
 
 app.directive('barChart',function(){
 	var link  = function(scope, element, attrs)
 	{
-
 		var options = {
 			part 	 : attrs.part || 0,
 			all  	 : attrs.all  || 100,
@@ -483,12 +507,51 @@ app.directive('barChart',function(){
 	}
 });
 
+app.directive('lineChart',function(){
+	 
+	var link = function(scope, element, attrs){
+		element.id = 'linechart_' + Math.random().toString(36).substr(2, 9);
+		var ctx = element[0].getContext("2d");	  
+	 	var data = {
+		    labels: ['2013','2014','2015'],
+		    datasets: [  
+		        {  
+		            fillColor: "rgba(151,187,205,0.2)",
+		            strokeColor: "rgba(151,187,205,1)",
+		            pointColor: "rgba(151,187,205,1)",
+		            pointStrokeColor: "#fff",
+		            pointHighlightFill: "#fff",
+		            pointHighlightStroke: "rgba(151,187,205,1)",
+		            data : [11 , 100, 200] 
+		        } 
+		    ]
+		};
+		  var lineChart = new Chart(ctx).Line(data);
+		
+		attrs.$observe('data',function()
+		{
+			data.labels = attrs.labels.split(',');
+			data.datasets[0].data = attrs.data.split(',');
+			data.datasets[0].data.forEach(function(val, index)
+			{
+				lineChart.datasets[0].points[index].value = parseInt(val);
+			});
+			lineChart.update();
+		});
+				 
+	}
+	return{
+		replace : true,
+		template : '<canvas></canvas>',
+		scope : 'controller',
+		link : link
+	}
 
+});
 app.directive('doubleDonuteChart', function()
 {
-
-
 	var link = function(scope,element,attrs){
+
 		var mainChartOptions = {
 			donut : true,
 				donutWidth : 35,
@@ -515,6 +578,7 @@ app.directive('doubleDonuteChart', function()
 		subChart = null;
 		var initChart = function()
 		{
+
 			var series  = [], labels = [],
 			mainChartId = element[0].querySelector('.main-chart').id = getId(),
 				subChartId  = element[0].querySelector('.sub-chart').id = getId();
@@ -717,7 +781,7 @@ app.directive('doubleDonuteChart', function()
 										  else
 										  {
 										  		var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-										  		console.log(item[0].items[data.index].title,'s')
+										  		 
 													//tspan.innerHTML = item[0][data.index].num + ' companies';
 													setAttributes(tspan, {
 														'dy' : '20',
@@ -742,6 +806,7 @@ app.directive('doubleDonuteChart', function()
  			};
 		}
 		scope.callBack(initChart);
+
 	}
 
 
